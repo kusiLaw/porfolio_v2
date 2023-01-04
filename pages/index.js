@@ -38,8 +38,8 @@ export default function Home({data}) {
              <p className=' text-light_text_color
              dark:text-dark_text_color leading-relaxed md:w-80 mt-20 phone:mt-6 mb-6 text-base mdx:text-lg mdx:leading-loose'>
                 A Developer with a proven track record in web application development. Eager to contribute innovative business solutions to global clients, 
-                I bring proficiency in React.js, JavaScript, Next.js, and Python.   I don't just code; I architect solutions that redefine user interactions. My commitment to excellence is complemented by strong communication and collaboration skills, making me not just a developer,
-                but a strategic partner ready to spearhead innovation and deliver exceptional results. Let's transform ideas into extraordinary digital realities together.
+                I bring proficiency in React.js, JavaScript, Next.js, and Python.   I don{`'`}t just code; I architect solutions that redefine user interactions. My commitment to excellence is complemented by strong communication and collaboration skills, making me not just a developer,
+                but a strategic partner ready to spearhead innovation and deliver exceptional results. Let{`'`}s transform ideas into extraordinary digital realities together.
              </p>
 
              <div className='mt-12 mb-6 w-full'>
