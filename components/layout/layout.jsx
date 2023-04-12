@@ -10,7 +10,12 @@ export default function Layout({ children }) {
        <title>Lawrence Kusi Portfolio</title>
        <meta name="description"  content="Lawrence Addai Kusi Portfolio | Modern portfolio website"/>
      </Head>
-     <main>{children}</main>
+    
+     <main>
+     
+     {children}
+
+     </main>
 
    </div>
  );
