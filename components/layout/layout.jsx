@@ -12,7 +12,7 @@ export default function Layout({ children }) {
               <meta name="description"  content="Lawrence Addai Kusi Portfolio | Modern portfolio website"/>
             </Head>
            
-            <main className=' w-90 max-w-screen-2xl border-solid border-2 border-red-200'>
+            <main className=' w-90 max-w-screen-2xl '>
             
             {children}
 
