@@ -3,7 +3,7 @@ import Head from "next/head";
 
 export default function Layout({ children }) {
  return (
-     <div className=" bg-yellow-50 text-light_text_color">
+     <div className="w-full flex flex-col items-center text-light_text_color dark:text-dark_text_color">
           {/* <div > */}
             <Head>
               <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,7 +12,7 @@ export default function Layout({ children }) {
               <meta name="description"  content="Lawrence Addai Kusi Portfolio | Modern portfolio website"/>
             </Head>
            
-            <main className='max-w-screen-xl bg-red-50'>
+            <main className=' w-90 max-w-screen-2xl border-solid border-2 border-red-200'>
             
             {children}
 
