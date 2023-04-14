@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
    <Layout>
-      <section className='flex flex-col align-middle min-h-screen	 text-lg pt-32 phone:pt-24 '>
+      <section className='flex flex-col align-middle min-h-screen	 text-lg pt-32 phone:pt-24 border-solid border-2 border-red-200'>
          <div className='h-fit	 pb-6 w-full	'>
          {/* border-solid border-2 border-red-200 */}
              <h1 className='leading-relaxed bg-clip-text'>
@@ -36,7 +36,7 @@ export default function Home() {
       </section>
 
       <section>
-       faaaaaaaaaaaaaaa231212312dadadasdasdasdasdasasdasdas 
+       
       </section>
      
    </Layout>
