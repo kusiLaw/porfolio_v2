@@ -14,9 +14,7 @@ export default function Layout({ children }) {
          </Head>
          <Header />
          <main className=' w-90 max-w-screen-2xl '>
-         
-         {children}
-
+           {children}
          </main>
      </div>
 

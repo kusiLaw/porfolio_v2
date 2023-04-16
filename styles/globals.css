@@ -22,6 +22,7 @@
        /* white-space: nowrap;
        width: -moz-fit-content;
        width: fit-content; */
+       
        animation: background_pan 2s linear infinite;
     }
 

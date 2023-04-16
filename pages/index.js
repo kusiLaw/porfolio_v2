@@ -1,15 +1,16 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Layout from '@/components/layout/layout'
 import Link from 'next/link'
-
+import { Title } from '@/components/title/title'
+import Project from '@/components/project/project'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
    <Layout>
-      <section className='flex flex-col align-middle min-h-screen	 text-lg pt-32 phone:pt-24 border-solid border-2 border-red-200'>
+  
+      <section className='flex flex-col align-middle min-h-screen	 text-lg pt-24 md:pt-40'>
          <div className='h-fit	 pb-6 w-full	'>
          {/* border-solid border-2 border-red-200 */}
              <h1 className='leading-relaxed bg-clip-text'>
@@ -29,16 +30,34 @@ export default function Home() {
                 If you like what you see and need help on a project, I am available for hire. 
              </p>
              <div className='mt-16 mb-5'>
-                    <Link href='#' className='p-3 rounded-xl border-2 text-white bg-btn-active border-light_accent dark:border-dark_accent' >
+                    <Link href='#' className='p-3 rounded-lg border-2 text-white bg-btn-active 
+                    border-light_accent dark:border-dark_accent shadow-md shadow-light_accent' >
                     Check Out My Works</Link>
              </div>
          </div>
       </section>
 
-      <section>
-       
+      <section className=' '>
+           <div className='mb-10'>
+               <Title text={'Projects'}/>
+           </div>
+           <div className=''>
+             <Project 
+                 img={'/me.png'}
+                 text={'If you like what you see and need help \
+                 on a project, I am available for hire kkhjhkjkj \
+                 .If you like what you see and need help \
+                 on a project, I am available for hire kkhjhkjkj '}
+                 title ={'Portfolio'}
+                 tech_stack = {['NextJS', "React", "Tailwind"]}
+                 source ={'#'}
+                 live = {'#'}
+                 type ={'Web'}
+                 year = {'2023'}
+              />
+           </div>
       </section>
-     
+    
    </Layout>
   )
 }

@@ -16,7 +16,8 @@ module.exports = {
          'light_accent_dark' : '#003fc7',
          'light_text_header': ' #2b353f',
          'light_text_color' : '#4e5b67',
-     
+         'light_bg_shallow' : 'rgba(240, 250, 250, 0.5)',
+
           'light-btn-hover': '#0065d9',
          'btn-active': '#056ade',
          'highlight': '#dbf3fb',
