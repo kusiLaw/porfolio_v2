@@ -41,7 +41,8 @@ const Header = () => {
             <div className='hidden md:block'><Nav desktop={true}  /></div>
             
             <div>
-             <Link href={''} className='hidden xl:inline-block border-dotted border-4 border-light_accent_dark pt-1 pr-3 pl-3 pb-1'>Resume</Link>
+             <Link href={''} className='hidden xl:inline-block border-dotted border-4 
+             border-light_accent_dark dark:border-dark_accent pt-1 pr-3 pl-3 pb-1 dark:text-dark_accent'>Resume</Link>
             </div>
             
             <div className='text-2xl -rotate-45'>{

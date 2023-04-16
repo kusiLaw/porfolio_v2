@@ -15,7 +15,7 @@ export default function Home() {
          {/* border-solid border-2 border-red-200 */}
              <h1 className='leading-relaxed bg-clip-text'>
                  <span className='block text-lg text-light_text_color'>Hi, my name is</span> 
-                 <span className=' block text-name_font text-transparent '>Lawrence Addai Kusi.</span>
+                 <span className=' block text-name_font text-transparent  animate-name_animate'>Lawrence Addai Kusi.</span>
              </h1>
 
              <p className='block text-2xl sm:tracking-wider	mt-3 mb-3 text-light_text_header dark:text-dark_text_header font-semibold'> 
@@ -37,27 +37,54 @@ export default function Home() {
          </div>
       </section>
 
-      <section className=' '>
+      <section className='mb-10 mt-10 mr-2 ml-2 '>
            <div className='mb-10'>
                <Title text={'Projects'}/>
            </div>
-           <div className=''>
-             <Project 
+           <div className='flex flex-col gap-5 lg:gap-[110px] items-center '>
+           
+               <Project 
+                   img={'/web.png'}
+                   text={'If you like what you see and need help \
+                   on a project, I am available for hire kkhjhkjkj \
+                   .If you like what you see and need help \
+                   on a project, I am available for hire kkhjhkjkj '}
+                   title ={'Portfolio'}
+                   tech_stack = {['NextJS', "React", "Tailwind"]}
+                   source ={'#'}
+                   live = {'#'}
+                   type ={'Web'}
+                   year = {'2023'}
+                   order = {0}
+                />
+
+     
+             
+              <Project 
                  img={'/me.png'}
                  text={'If you like what you see and need help \
                  on a project, I am available for hire kkhjhkjkj \
                  .If you like what you see and need help \
-                 on a project, I am available for hire kkhjhkjkj '}
+                 on a project, I am availabs dddd dddd ddddddd ddddddd dddd dddddddd ddd dddddddd dddddd dddd dddd ddddd ddddd dd dd dd dd dd \
+                 le for hire kkhjhkjkj '}   
                  title ={'Portfolio'}
                  tech_stack = {['NextJS', "React", "Tailwind"]}
                  source ={'#'}
                  live = {'#'}
                  type ={'Web'}
                  year = {'2023'}
+                 order = {0}
               />
+ 
+              
            </div>
-      </section>
-    
+       </section>
+       
+       <section className='mb-10 mt-10 mr-2 ml-2 '>
+           <div className='mb-10'>
+               <Title text={'More Projects'}/>
+           </div>
+       </section>
    </Layout>
   )
 }

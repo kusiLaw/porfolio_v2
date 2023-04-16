@@ -17,8 +17,8 @@ const Title = ({text}) => {
 const SubTile = ({text}) => {
  return (
    <div className=''>
-        <h3 className='text-xl 
-        font-bold md:text-4xl text-light_text_header dark:text-dark_text_header'>
+        <h3 className='text-lg 
+        font-bold md:text-2xl text-light_text_header dark:text-dark_text_header'>
         {text}
         </h3>
    </div>
