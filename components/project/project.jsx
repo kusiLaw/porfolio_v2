@@ -24,7 +24,7 @@ const Project = ({img,text, live, title, source,year, type, tech_stack = []}) =>
            </div>
 
             <div className="dark:absolute dark:bg-dark_hover_shallow dark:hover:bg-transparent
-             dark:top-0  -bottom-40 right-0 left-0"></div>
+             dark:top-0  bottom-0   right-0 left-0"></div>
              
             <div className=' pt-6 lg:pt-0 pb-2 lg:pb-0  bg-white dark:bg-dark_bg_secondary absolute 
                              right-0 left-0 top-40 h-fit shadow-md 
@@ -63,7 +63,7 @@ const Project = ({img,text, live, title, source,year, type, tech_stack = []}) =>
                    </Link>
                 </div>
             </div>
-            <div className="h-60"></div>
+            <div className="h-60  lg:hidden"></div>
         </div>   
     </div>
   )
