@@ -22,7 +22,7 @@
        /* white-space: nowrap;
        width: -moz-fit-content;
        width: fit-content; */
-       
+       background-color: hsla(201, 59%, 11%, 0.5);
        animation: background_pan 2s linear infinite;
     }
 

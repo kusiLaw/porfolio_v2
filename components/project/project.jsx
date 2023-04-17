@@ -40,7 +40,7 @@ const Project = ({img,text, live, title, source,year, type, tech_stack = []}) =>
                 <div className="text-light_accent dark:text-dark_accent flex justify-end pr-2 uppercase text-xs gap-4 ">
                    {type} {" "}  {year}
                 </div>
-                <div className="p-2 lg:p-4 lg:dark:bg-dark_bg_secondary flex-col flex-wrap
+                <div className="p-2 lg:p-4 lg:dark:bg-dark_bg_secondary flex-col flex-wrap 
                 lg:bg-light_accent_divider  lg:-ml-40 lg:shadow-md  lg:z-10 lg:m-1">
                    {text}
                 </div>
@@ -55,10 +55,10 @@ const Project = ({img,text, live, title, source,year, type, tech_stack = []}) =>
                 </div>
 
                 <div className="flex justify-end  self-end text-2xl gap-4 p-3 lg:p-2 font-bold " >
-                    <Link href={source}>
+                    <Link href={source} className="hover:dark:text-dark_accent">
                        <AiFillGithub />
                     </Link>
-                   <Link href={live}>
+                   <Link href={live} className="hover:dark:text-dark_accent">
                       <MdOpenInNew />
                    </Link>
                 </div>

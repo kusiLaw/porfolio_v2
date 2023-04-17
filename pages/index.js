@@ -3,6 +3,7 @@ import Layout from '@/components/layout/layout'
 import Link from 'next/link'
 import { Title } from '@/components/title/title'
 import Project from '@/components/project/project'
+import Archive from '@/components/archive/archive'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,9 +31,10 @@ export default function Home() {
                 If you like what you see and need help on a project, I am available for hire. 
              </p>
              <div className='mt-16 mb-5'>
-                    <Link href='#' className='p-3 rounded-lg border-2 text-white bg-btn-active 
-                    border-light_accent dark:border-dark_accent shadow-md shadow-light_accent' >
-                    Check Out My Works</Link>
+                    <Link href='#' className='p-3 rounded-lg border-4 text-white bg-btn-active 
+                    border-light_accent dark:border-dark_accent shadow-md dark:text-dark_accent 
+                    dark:border-dotted dark:bg-transparent' >
+                    Contact Me</Link>
              </div>
          </div>
       </section>
@@ -49,7 +51,7 @@ export default function Home() {
                    on a project, I am available for hire kkhjhkjkj \
                    .If you like what you see and need help \
                    on a project, I am available for hire kkhjhkjkj '}
-                   title ={'Portfolio'}
+                   title ={'Free Web Course'}
                    tech_stack = {['NextJS', "React", "Tailwind"]}
                    source ={'#'}
                    live = {'#'}
@@ -61,14 +63,14 @@ export default function Home() {
      
              
               <Project 
-                 img={'/me.png'}
+                 img={'/lak.png'}
                  text={'If you like what you see and need help \
                  on a project, I am available for hire kkhjhkjkj \
                  .If you like what you see and need help \
                  on a project, I am availabs dddd dddd ddddddd ddddddd dddd dddddddd ddd dddddddd dddddd dddd dddd ddddd ddddd dd dd dd dd dd \
                  le for hire kkhjhkjkj '}   
                  title ={'Portfolio'}
-                 tech_stack = {['NextJS', "React", "Tailwind"]}
+                 tech_stack = {['NextJS', "React", "Tailwind", "Rails"]}
                  source ={'#'}
                  live = {'#'}
                  type ={'Web'}
@@ -83,6 +85,18 @@ export default function Home() {
        <section className='mb-10 mt-10 mr-2 ml-2 '>
            <div className='mb-10'>
                <Title text={'More Projects'}/>
+           </div>
+           <div>
+              <Archive 
+              title={'To do list'}
+              main_tech = {'Html'}
+              other_techs = {['Tailwind', 'boostrap', 'Css']}
+               text={'If you like what you see and need help \
+                 on a project, I am available for hire kkhjhkjkj \
+                 .If you like what you see and need help \
+                 on a project, I am availabs dddd dddd ddddddd ddddddd dddd dddddddd ddd dddddddd dddddd dddd dddd ddddd ddddd dd dd dd dd dd \
+                 le for hire kkhjhkjkj '} 
+              />
            </div>
        </section>
    </Layout>

@@ -66,10 +66,14 @@ module.exports = {
         'name_animate' : 'bg_slide 3s linear infinite',
       },
 
+      backgroundImage: {
+       'dark_grad': "linear-gradient(to top , #0b202b, #0b202b 50%,  5%)",
+     }
       
 
      },
     },
-  // },
+  
   plugins: [],
 }
+
