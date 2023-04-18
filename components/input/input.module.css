@@ -1,0 +1,55 @@
+.text_input_wrapper {
+ position: relative;
+
+ color: #132f4c;
+}
+
+.text_input,
+.text_area_input {
+ width: 100%;
+ padding: 13px 8px; 
+ /* use 12px for pt,pb */
+ font-size: 1.5rem;
+ color: red;
+ margin-bottom: 30px;
+ border: none;
+ outline: none;
+ background: #f3f6f9;
+}
+
+.text_input:focus,
+.text_area_input:focus{
+border-bottom: 2px solid #132f4c; 
+}
+
+.text_input_label,
+.text__area_input_label{
+ position: absolute;
+ top: 0;
+ left: 0;
+
+ padding: 13px 8px;
+ font-size: 16px;
+ color: #132f4c;
+ pointer-events: none;
+ transition: .5s;
+}
+
+
+.text_input:focus ~ label,
+.text_input:valid ~ label,
+.text_area_input:focus ~ label,
+.text_area_input:valid ~ label {
+ top: -34px;
+ left: 0;
+ color: #132f4c;
+ font-size: 1.2rem;
+ padding-left:0px
+ 
+
+}
+
+
+.text_area_input:valid {
+ border-bottom: 2px sold green;
+}

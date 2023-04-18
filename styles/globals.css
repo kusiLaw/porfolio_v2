@@ -3,11 +3,6 @@
 @tailwind utilities;
 
 
-@keyframes  background_pan{
-  from { background-position: 0}; 
-  to { background-position: -200%}
-}
-
 
 @layer base {
  h1 {
@@ -26,5 +21,19 @@
        animation: background_pan 2s linear infinite;
     }
 
+ 
+    input:focus ~ label,
+    input:valid ~ label,
+    textarea:focus ~ label,
+    textarea:valid ~ label {
+     top: -1.8rem;
+     left: 0;
+     /* color: theme('dark:colors.dark_accent  colors.light_accent'); */
+     font-size: 1rem;
+     padding-left:0px
+    }
+
 }
+
+
 

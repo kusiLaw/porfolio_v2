@@ -1,9 +1,12 @@
 import { Inter } from 'next/font/google'
 import Layout from '@/components/layout/layout'
 import Link from 'next/link'
-import { Title } from '@/components/title/title'
+import { Title, SubTile } from '@/components/title/title'
 import Project from '@/components/project/project'
 import Archive from '@/components/archive/archive'
+import InputText from '@/components/input/input'
+import TextArea from '@/components/input/textarea'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -43,7 +46,7 @@ export default function Home() {
            <div className='mb-10'>
                <Title text={'Projects'}/>
            </div>
-           <div className='flex flex-col gap-5 lg:gap-[110px] items-center '>
+           <div className='flex flex-col gap-[5rem] lg:gap-[110px] items-center '>
            
                <Project 
                    img={'/web.png'}
@@ -99,6 +102,42 @@ export default function Home() {
               />
            </div>
        </section>
+
+       <section className='flex flex-col bg-inherit  justify-center shadow-md  
+                          dark:bg-dark_bg_secondary xl:bg-grad_form xl:border-solid xl:border-[0.5px] xl:dark:border-dark_accent'>  
+           <div className=' flex flex-col gap-5  
+                          xl:flex-row xl:gap-[0px] xl:bg-transparent
+                         '>
+             <div className='flex flex-col gap-4 px-3 pt-8 xl:w-[50%]  '>
+                 <Title text={'Contact Me'} />
+                <p> Your feedback is important to Me. </p>
+                <p>If you have an application you are interested in developing, a feature that you need to build, or a project that needs coding. I’d love to help with it.</p> 
+             </div>
+             <div className='form_wrapper  pt-5 px-3 xl:pt-10 xl:w-[50%] xl:pl-10 xl:pr-4   '>
+                <form onSubmit={''} className='flex flex-col justify-center  gap-6'>
+                     <div className='flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-4 xl:flex-col xl:gap-6 '>
+                        <div className='form_name lg:w-full'>
+                           <InputText  label='Name' name='name'/>
+                        </div>
+                         <div className='form_email lg:w-full'>
+                            <InputText  label='Email' name='email'/>
+                         </div>
+                     </div>
+          
+                   <div className='form_text' >
+                        <TextArea label="Message" name="message" maxLength='500'/>
+                   </div>
+                   <div className='flex justify-end pb-5' >
+                        <input type='submit'  value={'Submit'} className='p-2 px-8 rounded-lg border-2 text-white bg-btn-active 
+                    border-light_accent dark:border-dark_accent shadow-md dark:text-dark_accent 
+                     dark:bg-transparent' />
+                   </div>
+                   
+                </form>
+             </div>
+           </div>
+        </section>
+        <br />
    </Layout>
   )
 }

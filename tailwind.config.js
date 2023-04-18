@@ -67,8 +67,8 @@ module.exports = {
       },
 
       backgroundImage: {
-       'dark_grad': "linear-gradient(to top , #0b202b, #0b202b 50%,  5%)",
-     }
+       'grad_form': "linear-gradient(100deg,#0b202b  0%, #0b202b  50%, rgba(4, 15, 22, 1) 50%)",
+      }
       
 
      },

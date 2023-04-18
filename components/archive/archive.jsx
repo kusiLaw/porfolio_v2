@@ -13,14 +13,14 @@ import { SubTile } from '../title/title';
 const Archive = ({text, title, main_tech, live = "", source ="", other_techs = []}) => {
   
  const iconLibrary = {
-    'JavaScript': () => (<><DiJavascript1 /></>),
-    'Python' : () => (<><TbBrandPython /></>),
-    'Ruby' : () => (<><SiRuby /></>),
-    'React' : () => (<><FaReact /></>),
-    'Django' : () => (<><SiDjango /></>),
-    'Rails' : () => (<><SiRubyonrails /></>),
-    'NextJS' : () => (<><TbBrandNextjs /></>),
-    'Html' : () => (<><AiFillHtml5 /></>),
+    'JavaScript': () => (<DiJavascript1 />),
+    'Python' : () => (<TbBrandPython />),
+    'Ruby' : () => (<SiRuby />),
+    'React' : () => (<FaReact />),
+    'Django' : () => (<SiDjango />),
+    'Rails' : () => (<SiRubyonrails />),
+    'NextJS' : () => (<TbBrandNextjs />),
+    'Html' : () => (<AiFillHtml5 />),
   }
 
 
@@ -43,16 +43,13 @@ const Archive = ({text, title, main_tech, live = "", source ="", other_techs = [
       </div>
 
       <div className='capitalize mt-2 mb-2 '><SubTile text={title}/></div>
-      <div id="tooltip-light" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 tooltip">
-    Tooltip content
-    <div class="tooltip-arrow" data-popper-arrow></div>
-</div>
 
       <div className='mb-2'>{text}</div>
       <div className='flex gap-2 flex-wrap mt-2 mb-2 text-sm pt-2 dark:text-dark_accent'>
          {other_techs.map((el)=>(
-          <span>{el}</span>)
+          <span key={el}>{el}</span>)
          )}
+
 
       </div>
     </div>

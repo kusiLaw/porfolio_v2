@@ -6,7 +6,8 @@ import Link from "next/link";
 
 const Project = ({img,text, live, title, source,year, type, tech_stack = []}) => {
   return (
-    <div className='flex flex-col min-w-[320px] w-full '>
+// border-solid border-2 border-red-200 
+    <div className='flex flex-col min-w-[320px] w-full  '>
         <div className='flex flex-col relative 
                         lg:flex-row lg:w-full
                          '>
@@ -25,12 +26,13 @@ const Project = ({img,text, live, title, source,year, type, tech_stack = []}) =>
 
             <div className="dark:absolute dark:bg-dark_hover_shallow dark:hover:bg-transparent
              dark:top-0  bottom-0   right-0 left-0"></div>
-             
-            <div className=' pt-6 lg:pt-0 pb-2 lg:pb-0  bg-white dark:bg-dark_bg_secondary absolute 
-                             right-0 left-0 top-40 h-fit shadow-md 
+             {/* bg-white  dark:bg-dark_bg_secondary  dark_hover_shallow */}
+            
+            <div className=' pt-6 lg:pt-0 pb-2 lg:pb-0  bg-white  dark:bg-dark_bg_secondary
+                              h-fit shadow-md -mt-24 lg:mt-0 z-30
 
-                             lg:flex-col lg:justify-between	  lg:relative lg:top-0 lg:h-80 lg:w-2/5 lg:dark:bg-transparent
-                             lg:bg-transparent lg:shadow-none
+                             lg:flex-col lg:justify-between	  lg:relative lg:top-0 lg:h-80 lg:w-2/5 
+                             lg:bg-transparent lg:dark:bg-transparent lg:shadow-none
                       
                              '>
                 <div className="p-2 lg:flex lg:justify-end ">
@@ -63,7 +65,7 @@ const Project = ({img,text, live, title, source,year, type, tech_stack = []}) =>
                    </Link>
                 </div>
             </div>
-            <div className="h-60  lg:hidden"></div>
+            {/* <div className="h-60  lg:hidden"></div> */}
         </div>   
     </div>
   )
