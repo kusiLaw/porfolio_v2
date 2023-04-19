@@ -2,7 +2,7 @@ import React from 'react'
 
 const Title = ({text}) => {
   return (
-    <div className='flex w-full text-2xl font-bold md:text-4xl 
+    <div className='flex w-full text-2xl font-bold md:text-3xl 
          text-light_text_header dark:text-dark_text_header'>
          <h2 className="inline-block after:inline-block after:content-[''] after:bg-light_accent after:h-1">
          {text}
