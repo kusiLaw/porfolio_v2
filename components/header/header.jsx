@@ -31,7 +31,7 @@ const Header = () => {
 
 
   return (
-    <div className='absolute w-100 flex left-0 top-0 right-0 pt-3 pb-3 pl-3 pr-3 sm:pl-5 sm:pr-5 lg:pl-10 lg:pr-10
+    <div className='fixed z-50 w-100 flex left-0 top-0 right-0 pt-3 pb-3 pl-3 pr-3 sm:pl-5 sm:pr-5 lg:pl-10 lg:pr-10
     '>
        <div className='flex w-screen justify-between   '>
           <div className='flex justify-center items-center'>lk</div>

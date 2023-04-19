@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../header/header";
+import Aside from "../aside/aside";
 
 
 export default function Layout({ children }) {
@@ -13,9 +14,11 @@ export default function Layout({ children }) {
            <meta name="description"  content="Lawrence Addai Kusi Portfolio | Modern portfolio website"/>
          </Head>
          <Header />
+      
          <main className='w-90 lg:w-80 max-w-screen-2xl '>
            {children}
          </main>
+         <Aside />
      </div>
 
  );
