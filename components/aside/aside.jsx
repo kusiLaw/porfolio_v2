@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const Aside = () => {
   return (
-    <aside className='fixed left-5 h-screen '>
+    <aside className='fixed left-5 h-screen phone:hidden lg:block '>
       <div className='flex flex-col   
       h-full justify-center text-2xl text-dark_text_header'>
 
