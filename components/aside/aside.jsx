@@ -5,12 +5,12 @@ const Aside = () => {
   return (
     <aside className='fixed left-5 h-screen phone:hidden lg:block '>
       <div className='flex flex-col   
-                        h-full justify-center text-2xl text-dark_text_header'>
+                        h-full justify-center text-2xl text-light_text_header dark:text-dark_text_header'>
       <div className = 'flex flex-col gap-5  '>
         <SocialIcons/>
       </div>
        
-
+      
       </div>
     </aside>
   )

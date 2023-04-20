@@ -6,7 +6,8 @@ import Footer from "../footer/footer";
 
 export default function Layout({ children }) {
  return (
-     <div className="w-full flex flex-col items-center relative text-light_text_color dark:text-dark_text_color">
+     <div className="w-full flex flex-col items-center relative 
+                     text-light_text_color dark:text-dark_text_color">
         
          <Head>
            <meta name="viewport" content="width=device-width, initial-scale=1" />

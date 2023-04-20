@@ -10,9 +10,9 @@ module.exports = {
     extend: {
 
       colors: {
-         'light_bg': '#e2edf8',
+         'light_bg': '#fff',
          'accent_light' : '#56cbf9',
-         'light_accent_divider' : '#f3f6f9',
+         'light_accent_divider' : '#cae7ea',
          'light_accent' : '#005ce1',
          'light_accent_dark' : '#003fc7',
          'light_text_header': ' #2b353f',

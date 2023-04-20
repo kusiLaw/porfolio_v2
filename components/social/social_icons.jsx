@@ -7,19 +7,19 @@ const SocialIcons = () => {
   return (
    < >
    <Link href="https://github.com/kusiLaw" target="blank" className="hover:dark:text-dark_accent">
-      <FaGithub  className="hover:dark:text-dark_accent"/>
+      <FaGithub  className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
    </Link>
    <Link href="https://www.linkedin.com/in/lawrence-addai-kusi/" target="blank"  className="hover:dark:text-dark_accent">
-      <FaLinkedinIn className="hover:dark:text-dark_accent"/>
+      <FaLinkedinIn className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
    </Link>
    <Link href="https://wellfound.com/u/lawrence-kusi-addai" target="blank">
-      <FaAngellist className="hover:dark:text-dark_accent"/>
+      <FaAngellist className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
    </Link>
    <Link href="https://medium.com/@lawcubegsm/" target="blank">
-      <AiOutlineMedium className="hover:dark:text-dark_accent"/>
+      <AiOutlineMedium className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
    </Link>
    <Link href="mailto:lawrence.kusi.addai@gmail.com" >
-      <AiOutlineMail className="hover:dark:text-dark_accent"/>
+      <AiOutlineMail className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
    </Link>
   </>
 
