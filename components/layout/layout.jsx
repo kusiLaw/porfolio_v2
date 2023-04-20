@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "../header/header";
 import Aside from "../aside/aside";
+import Footer from "../footer/footer";
 
 
 export default function Layout({ children }) {
@@ -18,7 +19,7 @@ export default function Layout({ children }) {
          <main className='w-90 lg:w-80 max-w-screen-2xl '>
            {children}
          </main>
-         
+         <Footer />
      </div>
 
  );
