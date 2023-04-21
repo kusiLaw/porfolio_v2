@@ -159,8 +159,8 @@ export default function Home() {
        </section>
 
 
-       <section className='mb-20 flex flex-col bg-inherit  justify-center shadow-md  
-                          dark:bg-dark_bg_secondary xl:bg-grad_form xl:border-solid xl:border-[0.5px] xl:dark:border-dark_accent'>  
+       <section className='mb-20 flex flex-col bg-inherit  justify-center shadow-md 
+                          dark:bg-dark_bg_secondary xl:bg-light_grad_form xl:dark:bg-grad_form xl:border-solid xl:border-[0.5px] xl:dark:border-dark_accent'>  
            <div className=' flex flex-col gap-5  
                           xl:flex-row xl:gap-[0px] xl:bg-transparent
                          '>
@@ -171,7 +171,8 @@ export default function Home() {
              </div>
              <div className='form_wrapper  pt-5 px-3 xl:pt-10 xl:w-[50%] xl:pl-10 xl:pr-4   '>
                 <form onSubmit={''} className='flex flex-col justify-center  gap-6'>
-                     <div className='flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-4 xl:flex-col xl:gap-6 '>
+                     <div className='flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-4 xl:flex-col 
+                                     xl:gap-6 '>
                         <div className='form_name lg:w-full'>
                            <InputText  label='Name' name='name'/>
                         </div>

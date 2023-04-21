@@ -12,7 +12,7 @@ module.exports = {
       colors: {
          'light_bg': '#fff',
          'accent_light' : '#56cbf9',
-         'light_accent_divider' : '#cae7ea',
+         'light_accent_divider' : '#f5f5f5',
          'light_accent' : '#005ce1',
          'light_accent_dark' : '#003fc7',
          'light_text_header': ' #2b353f',
@@ -68,6 +68,7 @@ module.exports = {
 
       backgroundImage: {
        'grad_form': "linear-gradient(100deg,#0b202b  0%, #0b202b  50%, rgba(4, 15, 22, 1) 50%)",
+       'light_grad_form': "linear-gradient(100deg,#f5f5f5  0%, #f5f5f5  50%, #fff 50%)",
       }
       
 
