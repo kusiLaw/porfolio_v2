@@ -33,7 +33,7 @@ export default function Home() {
   return (
    <Layout>
   
-      <section className='mb-20 flex flex-col align-middle min-h-fit	text-lg pt-24 md:pt-40 pr-1 pl-1 '>
+      <section id='presentation' className=' flex flex-col align-middle min-h-fit	text-lg pt-24 md:pt-40 pr-1 pl-1 '>
          <div className='h-fit	 w-full	'>
              {/* border-solid border-2 border-red-200 */}
              <h1 className='leading-relaxed bg-clip-text dark:bg-name_dark_gradient'>
@@ -55,14 +55,15 @@ export default function Home() {
              </p>
              <div className='mt-16 mb-6 w-full'>
                     <Link href='#' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 text-light_accent 
-                    border-light_accent dark:border-dark_accent dark:text-dark_accent 
-                    border-dotted dark:bg-transparent ' >
+                    border-light_accent dark:border-dark_accent dark:text-dark_accent border-dotted dark:bg-transparent  
+                    hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  
+                    hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent' >
                     Contact Me <span className='inline-block m-auto ' > <FaLongArrowAltRight/> </span></Link>
              </div>
          </div>
       </section>
 
-      <section className='mb-20'>
+      <section  id='projects' className='mt-20 md:mt-28'>
            <div className='mb-10 pr-2 pl-2 '>
                <Title text={'Projects'}/>
            </div>
@@ -105,7 +106,7 @@ export default function Home() {
            </div>
        </section>
        
-       <section className='mb-20 pr-2 pl-2 '>
+       <section id='extra_projects' className='mt-20 md:mb-28 pr-2 pl-2 '>
            <div className='mb-10'>
                <Title text={'More Projects'}/>
            </div>
@@ -124,7 +125,7 @@ export default function Home() {
        </section>
 
 
-       <section className='mb-20 pr-2 pl-2'>
+       <section id='about' className='mt-20 md:mt-28 pr-2 pl-2'>
           <div className='py-10'>
              <Title text={'About Me'} />
           </div>
@@ -159,7 +160,7 @@ export default function Home() {
        </section>
 
 
-       <section className='mb-20 flex flex-col bg-inherit  justify-center shadow-md 
+       <section id='contact'  className='mt-20 md:mt-28 flex flex-col bg-inherit  justify-center shadow-md 
                           dark:bg-dark_bg_secondary xl:bg-light_grad_form xl:dark:bg-grad_form xl:border-solid xl:border-[0.5px] xl:dark:border-dark_accent'>  
            <div className=' flex flex-col gap-5  
                           xl:flex-row xl:gap-[0px] xl:bg-transparent
@@ -185,9 +186,11 @@ export default function Home() {
                         <TextArea label="Message" name="message" maxLength='500'/>
                    </div>
                    <div className='flex justify-end pb-5' >
-                        <input type='submit'  value={'Submit'} className='p-2 px-8 rounded-lg border-2 text-white bg-btn-active 
-                    border-light_accent dark:border-dark_accent shadow-md dark:text-dark_accent 
-                     dark:bg-transparent' />
+                        <input type='submit'  value={'Submit'} className='p-2 px-8 rounded-lg border-2 text-light_accent 
+                    border-light_accent dark:border-dark_accent  dark:text-dark_accent 
+                     dark:bg-transparent 
+                     hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  hover:shadow-md
+                   hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent ' />
                    </div>
                    
                 </form>

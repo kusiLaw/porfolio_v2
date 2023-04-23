@@ -35,14 +35,15 @@ const Header = () => {
             bg-light_bg dark:bg-dark_bg
     '>
        <div className='flex w-screen justify-between '>
-          <div className='flex justify-center items-center  text-xl md:text-2xl font-medium  '>
-          <span className='text-light_accent  dark:text-dark_accent italic'>L</span>
-          <span className='text-light_accent dark:text-dark_accent'>a</span>
-          <span className=''>k</span>
-          <span className=''>y</span>
-          <span className=' '>.</span>
-
-          </div>
+             <div className='flex justify-center items-center  text-xl md:text-2xl font-medium  '>
+               <Link href={'/'}>
+                  <span className='text-light_accent  dark:text-dark_accent italic'>L</span>
+                  <span className='text-light_accent dark:text-dark_accent'>a</span>
+                  <span className=''>k</span>
+                  <span className=''>y</span>
+                  <span className=' '>.</span>
+               </Link>
+             </div>
 
           
           <div className='flex items-center gap-4	 '> 
@@ -50,7 +51,9 @@ const Header = () => {
             
             <div>
              <Link href={''} className='hidden xl:inline-block border-dotted border-4 
-             border-light_accent_dark dark:border-dark_accent pt-1 pr-3 pl-3 pb-1 dark:text-dark_accent'>Resume</Link>
+             border-light_accent dark:border-dark_accent pt-1 pr-3 pl-3 pb-1 dark:text-dark_accent
+             hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  
+              hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent'>Resume</Link>
             </div>
             
             <div className='text-2xl -rotate-45'>{
