@@ -36,9 +36,9 @@ export default function Home() {
       <section className='mb-20 flex flex-col align-middle min-h-fit	text-lg pt-24 md:pt-40 pr-1 pl-1 '>
          <div className='h-fit	 w-full	'>
              {/* border-solid border-2 border-red-200 */}
-             <h1 className='leading-relaxed bg-clip-text'>
+             <h1 className='leading-relaxed bg-clip-text dark:bg-name_dark_gradient'>
                  <span className='block text-lg text-light_text_color'>Hi, my name is</span> 
-                 <span className=' block text-name_font text-transparent  animate-name_animate'>Lawrence Addai Kusi.</span>
+                 <span className=' block text-name_font text-transparent '>Lawrence Addai Kusi.</span>
              </h1>
 
              <p className='block text-2xl sm:tracking-wider	mt-3 mb-3 text-light_text_header 
@@ -53,7 +53,7 @@ export default function Home() {
                 highlight their core competencies, and further their success. Look through some of my work and experience! 
                 If you like what you see and need help on a project, I am available for hire. 
              </p>
-             <div className='mt-16 mb-4 w-full'>
+             <div className='mt-16 mb-6 w-full'>
                     <Link href='#' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 text-light_accent 
                     border-light_accent dark:border-dark_accent dark:text-dark_accent 
                     border-dotted dark:bg-transparent ' >

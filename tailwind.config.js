@@ -69,6 +69,7 @@ module.exports = {
       backgroundImage: {
        'grad_form': "linear-gradient(100deg,#0b202b  0%, #0b202b  50%, rgba(4, 15, 22, 1) 50%)",
        'light_grad_form': "linear-gradient(100deg,#f5f5f5  0%, #f5f5f5  50%, #fff 50%)",
+       'name_dark_gradient': "linear-gradient(to right, #005a78, #0081ac, #005a78)"
       }
       
 

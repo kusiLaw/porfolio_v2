@@ -9,15 +9,8 @@
        /* font-size: clamp(1.8rem ,5vw,4rem);; */
        background: linear-gradient(to right, theme('colors.light_accent_dark'), 
                    theme('colors.light_accent'), theme('colors.light_accent_dark'));
-       /* background-clip: text; */
-       /* color: transparent; */
-       /* font-weight: 800; */
-       /* -webkit-background-clip: text; */
-       /* -webkit-text-fill-color: transparent; */
-       /* white-space: nowrap;
-       width: -moz-fit-content;
-       width: fit-content; */
-       background-color: #f5f5f5;
+
+      
        animation: background_pan 2s linear infinite;
     }
 
@@ -36,4 +29,6 @@
 }
 
 
-
+/* .name_dark_gradient{
+  background: linear-gradient(to right, '#005a7', '#0081a', '#005a7');
+} */
