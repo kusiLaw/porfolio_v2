@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Nav = ({desktop}) =>{
  return (
-     <nav className="flex sm:justify-center space-x-2
+     <nav className="flex space-x-2
    ">
       {[
         ['Home', '/'],

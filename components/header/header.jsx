@@ -12,7 +12,7 @@ const Header = () => {
 
   const handel_darkMode = () =>{
       // let toggle  = mode === 'light' ? 'dark' : 'light'
-      // setMode(toggle)
+      console.log(isOpen)
       localStorage.setItem('mode', !darkMode);
       setDarkMode(!darkMode)
   }
@@ -47,7 +47,9 @@ const Header = () => {
 
           
           <div className='flex items-center gap-4	 '> 
-            <div className='hidden md:block'><Nav desktop={true}  /></div>
+            <div className='hidden md:block'>
+               <Nav desktop={true}  />
+            </div>
             
             <div>
              <Link href={''} className='hidden xl:inline-block border-dotted border-4 

@@ -91,7 +91,7 @@ export default function Home() {
                  text={'If you like what you see and need help \
                  on a project, I am available for hire kkhjhkjkj \
                  .If you like what you see and need help \
-                 on a project, I am availabs dddd dddd ddddddd ddddddd dddd dddddddd ddd dddddddd dddddd dddd dddd ddddd ddddd dd dd dd dd dd \
+                 on a project, I am availabs  d dd \
                  le for hire kkhjhkjkj '}   
                  title ={'Portfolio'}
                  tech_stack = {['NextJS', "React", "Tailwind", "Rails"]}
@@ -99,7 +99,7 @@ export default function Home() {
                  live = {'#'}
                  type ={'Web'}
                  year = {'2023'}
-                 order = {0}
+                 order = {1}
               />
  
               
