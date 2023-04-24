@@ -54,8 +54,8 @@ export default function Home() {
                 If you like what you see and need help on a project, I am available for hire. 
              </p>
              <div className='mt-16 mb-6 w-full'>
-                    <Link href='#' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 text-light_accent 
-                    border-light_accent dark:border-dark_accent dark:text-dark_accent border-dotted dark:bg-transparent  
+                    <Link href='#' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 border-dotted text-light_accent 
+                    border-light_accent dark:border-dark_accent dark:text-dark_accent  dark:bg-transparent  
                     hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  
                     hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent' >
                     Contact Me <span className='inline-block m-auto ' > <FaLongArrowAltRight/> </span></Link>
@@ -110,10 +110,30 @@ export default function Home() {
            <div className='mb-10'>
                <Title text={'More Projects'}/>
            </div>
-           <div>
+           <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-4 content-start'>
               <Archive 
               title={'To do list'}
               main_tech = {'Html'}
+              other_techs = {['Tailwind', 'boostrap', 'Css']}
+               text={'If you like what you see and need help \
+                 on a project, I am available for hire kkhjhkjkj \
+                 .If you like what you see and need help \
+                 on a project, I am availabs dddd dddd ddddddd ddddddd dddd dddddddd ddd dddddddd dddddd dddd dddd ddddd ddddd dd dd dd dd dd \
+                 le for hire kkhjhkjkj '} 
+              />
+                <Archive 
+              title={'To do list'}
+              main_tech = {'React'}
+              other_techs = {['Tailwind', 'boostrap', 'Css']}
+               text={'If you like what you see and need help \
+                 on a project, I am available for hire kkhjhkjkj \
+                 .If you like what you see and need help \
+                 on a project, I am availabs dddd dddd ddddddd ddddddd dddd dddddddd ddd dddddddd dddddd dddd dddd ddddd ddddd dd dd dd dd dd \
+                 le for hire kkhjhkjkj '} 
+              />
+                <Archive 
+              title={'To do list'}
+              main_tech = {'Python'}
               other_techs = {['Tailwind', 'boostrap', 'Css']}
                text={'If you like what you see and need help \
                  on a project, I am available for hire kkhjhkjkj \
@@ -130,31 +150,35 @@ export default function Home() {
              <Title text={'About Me'} />
           </div>
           <div className='flex flex-col gap-3 flex-wrap '>
-              <p>Hello! My name is Lawrence Addai Kusi. I’m a Full-Stack Software Developer from Ghana. 
-                  I have a great passion for UI creation, effects, animation, and dynamic user experiences. 
-                  I'm interested in working on ambitious projects with positive people and goal-oriented companies. 
-              </p>
-              <p>
-                   I fully immersed myself in the software development world. Since May 2022, I've been building my technical, leadership, 
-                   and collaborative skills at 
-                   <Link href={'https://www.microverse.org/'} className='dark:text-dark_accent text-light_accent inline-block px-2 '>Microverse</Link> 
-                   through collaboration and pair programming with other students from all over the world. 
-              </p>
-              <p>
-                  My goal as a Software Developer is to continually improve my programming skills,
-                   and create high-quality software to present better solutions for individuals and 
-                   businesses. I enjoy uncovering new ideas and would use them to advance my employers' mission to deliver the best tech experiences. 
-              </p>
-              <p>
-                   Here are a few technologies I have been working with recently and soft skills:
-              </p>
-
-              <div className='flex flex-row gap-2 phone:justify-between sm:justify-start sm:gap-16
-              bg-(url("../../public/pattern-quotes.svg")] bg-left bg-auto'>
-              {exp_list(['Javascript (ES6+)','Next.js 13','React', 'python', 'Ruby', 'Ruby on Rails'])}
-              {exp_list(['Communication','Pair-programming', 'Remote Work', 'Problem-Solving'])}
-              
+              <div className=''>
+                   <p>Hello! My name is Lawrence Addai Kusi. I’m a Full-Stack Software Developer from Ghana. 
+                       I have a great passion for UI creation, effects, animation, and dynamic user experiences. 
+                       I'm interested in working on ambitious projects with positive people and goal-oriented companies. 
+                   </p>
+                   <p>
+                        I fully immersed myself in the software development world. Since May 2022, I've been building my technical, leadership, 
+                        and collaborative skills at 
+                        <Link href={'https://www.microverse.org/'} className='dark:text-dark_accent text-light_accent inline-block px-2 '>Microverse</Link> 
+                        through collaboration and pair programming with other students from all over the world. 
+                   </p>
+                   <p>
+                       My goal as a Software Developer is to continually improve my programming skills,
+                        and create high-quality software to present better solutions for individuals and 
+                        businesses. I enjoy uncovering new ideas and would use them to advance my employers' mission to deliver the best tech experiences. 
+                   </p>
               </div>
+              <div className=''>
+                  <div className='flex flex-row gap-2 phone:justify-between sm:justify-start sm:gap-16
+                  bg-(url("../../public/pattern-quotes.svg")] bg-left bg-auto'>
+                  {exp_list(['Javascript (ES6+)','Next.js 13','React', 'python', 'Ruby', 'Ruby on Rails'])}
+                  {exp_list(['Communication','Pair-programming', 'Remote Work', 'Problem-Solving'])}
+                  
+                  </div>
+              </div>
+              
+             
+
+              
              
           </div>
        </section>

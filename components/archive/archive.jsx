@@ -25,9 +25,9 @@ const Archive = ({text, title, main_tech, live = "", source ="", other_techs = [
 
 
   return (
-    <div className='p-4 pt-8  dark:bg-dark_bg_secondary'>
+    <div className='p-4 pt-8 shadow-md bg-light_accent_divider dark:bg-dark_bg_secondary'>
       <div className='flex justify-between items-center mb-8'>
-          <div className='text-4xl dark:text-dark_accent'>{iconLibrary[main_tech]? iconLibrary[main_tech](): <FiFolder/>}</div>
+          <div className='text-4xl text-light_accent dark:text-dark_accent'>{iconLibrary[main_tech]? iconLibrary[main_tech](): <FiFolder/>}</div>
           <div className='flex gap-3 text-2xl'>
              <dev className=' hover:dark:text-dark_accent'> 
                   <Link href={source}>
@@ -45,7 +45,7 @@ const Archive = ({text, title, main_tech, live = "", source ="", other_techs = [
       <div className='capitalize mt-2 mb-2 '><SubTile text={title}/></div>
 
       <div className='mb-2'>{text}</div>
-      <div className='flex gap-2 flex-wrap mt-2 mb-2 text-sm pt-2 dark:text-dark_accent'>
+      <div className='flex gap-2 flex-wrap mt-2 mb-2 text-sm pt-2 text-light_accent dark:text-dark_accent'>
          {other_techs.map((el)=>(
           <span key={el}>{el}</span>)
          )}

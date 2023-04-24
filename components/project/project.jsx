@@ -11,7 +11,7 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
         <div className={ order === 0 ? 'flex flex-col relative lg:flex-row lg:w-full' : 
                                        'flex flex-col relative lg:flex-row-reverse lg:w-full'
         }>
-           <div className= 'relative w-100 h-64 overflow-hidden shadow-md lg:w-3/5	lg:shadow-none '  >
+           <div className= 'relative w-100 h-64 overflow-hidden shadow-md lg:w-3/5	'  >
 
               <Image src={img} 
               placeholder="blur" 
