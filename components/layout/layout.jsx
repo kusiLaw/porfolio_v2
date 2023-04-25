@@ -15,7 +15,10 @@ export default function Layout({ children }) {
            <title>Lawrence Kusi Portfolio</title>
            <meta name="description"  content="Lawrence Addai Kusi Portfolio | Modern portfolio website"/>
          </Head>
-         <Header />
+         {/* <div className="relative"> */}
+           <Header />
+         {/* </div> */}
+         
          <Aside />
          <main className='w-90 lg:w-80 max-w-screen-2xl '>
            {children}

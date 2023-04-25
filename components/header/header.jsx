@@ -5,11 +5,12 @@ import { MdNightlight } from "react-icons/md"
 import { Turn as Hamburger } from 'hamburger-react'
 import {Mode, updateMode} from '@/utilities/darkmode';
 import Nav from './nav';
+import SocialIcons from '../social/social_icons';
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState('')
   const [isOpen, setOpen] = useState(false)
-
+  console.log(isOpen)
   const handel_darkMode = () =>{
       // let toggle  = mode === 'light' ? 'dark' : 'light'
       console.log(isOpen)
@@ -31,7 +32,7 @@ const Header = () => {
 
 
   return (
-    <div className=' fixed z-50 w-100 flex left-0 top-0 right-0 pt-3 pb-3 pl-3 pr-3 sm:pl-5 sm:pr-5 lg:pl-10 lg:pr-10
+    <div className=' fixed  z-50 w-100 flex left-0 top-0 right-0 pt-3 pb-3 pl-3 pr-3 sm:pl-5 sm:pr-5 lg:pl-10 lg:pr-10
             bg-light_bg dark:bg-dark_bg
     '>
        <div className='flex w-screen justify-between '>
@@ -47,8 +48,9 @@ const Header = () => {
 
           
           <div className='flex items-center gap-4	 '> 
-            <div className='hidden md:block'>
-               <Nav desktop={true}  />
+            <div className={ isOpen ? 'block bg-light_bg dark:bg-dark_bg' : 'hidden  md:block'}>
+               <Nav  isOpen = {isOpen} setOpen={setOpen} />
+               
             </div>
             
             <div>
@@ -59,13 +61,14 @@ const Header = () => {
             </div>
             
             <div className='text-2xl -rotate-45'>{
-             darkMode === true ? 
-           <BsFillBrightnessHighFill onClick={handel_darkMode} /> : 
+               darkMode === true ? 
+               <BsFillBrightnessHighFill onClick={handel_darkMode} /> : 
 
-           <MdNightlight onClick={handel_darkMode} />} 
+               <MdNightlight onClick={handel_darkMode} />} 
             </div>
-            <div className='text-lg md:hidden'>
-            <Hamburger toggled={isOpen} toggle={setOpen} />
+            
+            <div className={isOpen ? 'block' : 'text-lg md:hidden'}>
+                 <Hamburger toggled={isOpen} toggle={setOpen} />
             </div>
              
            </div>
