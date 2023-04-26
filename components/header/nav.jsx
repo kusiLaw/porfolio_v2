@@ -1,11 +1,16 @@
 import Link from 'next/link';
 import SocialIcons from '../social/social_icons';
+import Resume from '../resume/resume';
 
 const Nav = ({isOpen, setOpen}) =>{
  return (
-     <nav className={isOpen ? "absolute bg-inherit z-30 top-12 h-screen right-0 left-0 flex flex-col \
+     <nav className={isOpen ? "absolute bg-inherit z-30 top-14 h-screen right-0 left-0 flex flex-col \
       items-center   px-5 pt-5 divide-y divide-light_accent dark:divide-dark_accent": 
      "flex space-x-2 md:block"}>
+
+
+
+       {/* flex pt-10 pb-10 items-center w-full justify-evenly text-2xl */}
 
       {[
         ['Home', '/'],
@@ -21,9 +26,13 @@ const Nav = ({isOpen, setOpen}) =>{
         </Link>
       ))}
 
-      {isOpen && <div className='flex pt-10 pb-10 items-center w-full justify-evenly text-2xl '>
+      {isOpen && <div className='flex pt-5 pb-5 items-center w-full justify-end gap-4 text-2xl '>
                  <SocialIcons />
        </div>}
+
+      {isOpen && <div className='flex justify-end self-end  w-fit'>
+             <Resume isOpen />
+      </div>}
       
      </nav>
  )

@@ -6,6 +6,7 @@ import { Turn as Hamburger } from 'hamburger-react'
 import {Mode, updateMode} from '@/utilities/darkmode';
 import Nav from './nav';
 import SocialIcons from '../social/social_icons';
+import Resume from '../resume/resume';
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState('')
@@ -54,10 +55,7 @@ const Header = () => {
             </div>
             
             <div>
-             <Link href={''} className='hidden xl:inline-block border-dotted border-4 
-             border-light_accent dark:border-dark_accent pt-1 pr-3 pl-3 pb-1 dark:text-dark_accent
-             hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  
-              hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent'>Resume</Link>
+             <Resume />
             </div>
             
             <div className='text-2xl -rotate-45'>{
