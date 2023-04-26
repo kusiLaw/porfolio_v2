@@ -5,16 +5,7 @@
 
 
 @layer base {
- h1 {
-       /* font-size: clamp(1.8rem ,5vw,4rem);; */
-       background: linear-gradient(to right, theme('colors.light_accent_dark'), 
-                   theme('colors.light_accent'), theme('colors.light_accent_dark'));
 
-      
-       animation: background_pan 2s linear infinite;
-    }
-
- 
     input:focus ~ label,
     input:valid ~ label,
     textarea:focus ~ label,

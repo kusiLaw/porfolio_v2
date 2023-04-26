@@ -55,7 +55,7 @@ module.exports = {
      },
 
      keyframes: {
-      bg_slide: {
+      bgSlide: {
        'from' : { 'background-position': '0'},
        'to' :  { 'background-position': '-200%'}
       }
@@ -63,13 +63,14 @@ module.exports = {
 
 
       animation: {
-        'name_animate' : 'bg_slide 3s linear infinite',
+        'name_animate' : 'bgSlide 3s linear infinite',
       },
 
       backgroundImage: {
        'grad_form': "linear-gradient(100deg,#0b202b  0%, #0b202b  50%, rgba(4, 15, 22, 1) 50%)",
        'light_grad_form': "linear-gradient(100deg,#f3f6f9  0%, #f3f6f9  50%, #fff 50%)",
-       'name_dark_gradient': "linear-gradient(to right, #005a78, #0081ac, #005a78)"
+       'name_dark_gradient': "linear-gradient(to right, #005a78, #0081ac, #005a78)",
+       'name_gradient' : "linear-gradient(to right, #003fc7, #005ce1, #003fc7) "
       }
       
 
