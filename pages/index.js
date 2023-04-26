@@ -196,12 +196,12 @@ export default function Home() {
              </div>
              <div className='form_wrapper  pt-5 px-3 xl:pt-10 xl:w-[50%] xl:pl-10 xl:pr-4   '>
                 <form onSubmit={''} className='flex flex-col justify-center  gap-6'>
-                     <div className='flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-4 xl:flex-col 
+                     <div className='flex flex-col gap-6 md:flex-row md:justify-between md:gap-4 xl:flex-col 
                                      xl:gap-6 '>
-                        <div className='form_name lg:w-full'>
+                        <div className='form_name md:w-full'>
                            <InputText  label='Name' name='name'/>
                         </div>
-                         <div className='form_email lg:w-full'>
+                         <div className='form_email md:w-full'>
                             <InputText  label='Email' name='email'/>
                          </div>
                      </div>
