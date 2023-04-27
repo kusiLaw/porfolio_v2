@@ -4,10 +4,9 @@ import Link from 'next/link'
 import { Title, SubTile } from '@/components/title/title'
 import Project from '@/components/project/project'
 import Archive from '@/components/archive/archive'
-import InputText from '@/components/input/input'
-import TextArea from '@/components/input/textarea'
-import { FaLongArrowAltRight} from "react-icons/fa"
 
+import { FaLongArrowAltRight} from "react-icons/fa"
+import ContactForm from '@/components/form/form'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -195,29 +194,7 @@ export default function Home() {
                 <p>If you have an application you are interested in developing, a feature that you need to build, or a project that needs coding. I’d love to help with it.</p> 
              </div>
              <div className='form_wrapper  pt-5 px-3 xl:pt-10 xl:w-[50%] xl:pl-10 xl:pr-4   '>
-                <form onSubmit={''} className='flex flex-col justify-center  gap-6'>
-                     <div className='flex flex-col gap-6 md:flex-row md:justify-between md:gap-4 xl:flex-col 
-                                     xl:gap-6 '>
-                        <div className='form_name md:w-full'>
-                           <InputText  label='Name' name='name'/>
-                        </div>
-                         <div className='form_email md:w-full'>
-                            <InputText  label='Email' name='email'/>
-                         </div>
-                     </div>
-          
-                   <div className='form_text' >
-                        <TextArea label="Message" name="message" maxLength='500'/>
-                   </div>
-                   <div className='flex justify-end pb-5' >
-                        <input type='submit'  value={'Submit'} className='p-2 px-8 rounded-lg border-2 text-light_accent 
-                    border-light_accent dark:border-dark_accent  dark:text-dark_accent 
-                     dark:bg-transparent 
-                     hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  hover:shadow-md
-                   hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent ' />
-                   </div>
-                   
-                </form>
+                <ContactForm />
              </div>
            </div>
        </section>
