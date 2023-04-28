@@ -17,8 +17,10 @@
      font-size: 1rem;
      padding-left:0px
     }
-    /* input:invalid ~ label{
-     color:inherit;
+    /* input:blank
+    {
+     background-color:red;
+     border: none;
     } */
 }
 

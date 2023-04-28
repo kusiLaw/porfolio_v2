@@ -25,7 +25,7 @@ const Archive = ({text, title, main_tech, live = "", source ="", other_techs = [
 
 
   return (
-    <div className='p-4 pt-8 shadow-md bg-light_accent_divider dark:bg-dark_bg_secondary'>
+    <div className='p-4 pt-8 shadow-md bg-light_accent_divider dark:bg-dark_bg_secondary border border-1 border-light_text_header'>
       <div className='flex justify-between items-center mb-8'>
           <div className='text-4xl text-light_accent dark:text-dark_accent'>{iconLibrary[main_tech]? iconLibrary[main_tech](): <FiFolder/>}</div>
           <div className='flex gap-3 text-2xl'>

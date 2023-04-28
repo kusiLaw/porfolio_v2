@@ -9,9 +9,8 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
 // border-solid border-2 border-red-200 
     <div className='flex flex-col min-w-[320px] w-full  '>
         <div className={ order === 0 ? 'flex flex-col relative mdx:flex-row mdx:w-full' : 
-                                       'flex flex-col relative mdx:flex-row-reverse mdx:w-full'
-        }>
-           <div className= 'relative w-100 h-64 overflow-hidden shadow-md mdx:w-3/5	'  >
+                                       'flex flex-col relative mdx:flex-row-reverse mdx:w-full '}>
+           <div className= 'relative w-100 h-64 overflow-hidden shadow-md mdx:w-3/5 	' >
 
               <Image src={img} 
               placeholder="blur" 
@@ -20,12 +19,19 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
               style={{ objectFit: "100%"}}
                />
 
-              <div className="dark:absolute dark:bg-dark_hover_shallow dark:hover:bg-transparent
-                   dark:top-0  bottom-0   right-0 left-0"></div>
+              <div className=" dark:absolute dark:bg-dark_hover_shallow_sm   mdx:dark:bg-dark_hover_shallow dark:hover:bg-transparent
+                   dark:top-0  bottom-0   right-0 left-0 "></div>
            </div>
 
-                       
-            <div className=' pt-6 mdx:pt-0 pb-2 mdx:pb-0  bg-white  dark:bg-dark_bg_secondary
+           {/* // bg-white bg-grad_light_project  dark:bg-dark_bg_secondary */}
+            <div className=' pt-6 mdx:pt-0 pb-2 mdx:pb-0  
+                              
+                              bg-grad_light_project
+                              mdx:bg-grad_project_inherit
+
+                              dark:bg-grad_project
+                              mdx:dark:bg-grad_project_inherit
+
                               h-fit shadow-md -mt-24 mdx:mt-0 z-30
 
                              mdx:flex-col mdx:justify-between	  mdx:relative mdx:top-0 mdx:h-80 mdx:w-2/5 
@@ -41,8 +47,9 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                    {type} {" "}  {year}
                 </div>
                 <div className={ order === 0 ? "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap \
-                mdx:bg-light_accent_divider  mdx:-ml-40 mdx:shadow-md  mdx:z-10 mdx:m-1" :
-                "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap mdx:bg-light_accent_divider  mdx:-mr-40 mdx:shadow-md  mdx:z-10 mdx:m-1"
+                mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-ml-40 mdx:shadow-lg  mdx:z-10 mdx:m-1 " :
+                "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap \
+                 mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-mr-40 mdx:shadow-lg  mdx:z-10 mdx:m-1"
                 }>
                    {text}
                 </div>
