@@ -7,27 +7,11 @@ import Archive from '@/components/archive/archive'
 
 import { FaLongArrowAltRight} from "react-icons/fa"
 import ContactForm from '@/components/form/form'
+import Experience from '@/components/experince_list/experience'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-
-
- const exp_list =(exp)=>{
-  return (
-   <ul>
-                {exp.map((el) => (<li key={el} 
-                className='relative pl-5 '>
-                      <span className='before:content-["▹"] before:absolute  before:left-0  
-                      before:dark:text-dark_accent before:text-light_accent'>{el}</span>
-                </li>
-                ))
-                
-                }
-    </ul>
-  )
- }
-
 
   return (
    <Layout>
@@ -144,7 +128,7 @@ export default function Home() {
        </section>
 
 
-       <section id='about' className='mt-20 md:mt-28 pr-2 pl-2'>
+       <section id='about' className='mt-20 md:mt-28 pr-2 pl-2 about-bg'>
           <div className='py-10'>
              <Title text={'About Me'} />
           </div>
@@ -167,14 +151,37 @@ export default function Home() {
                    </p>
               </div>
               <div className=''>
-                  <div className='flex flex-row gap-2 phone:justify-between sm:justify-start sm:gap-16
-                  bg-(url("../../public/pattern-quotes.svg")] bg-left bg-auto'>
-                  {exp_list(['Javascript (ES6+)','Next.js 13','React', 'python', 'Ruby', 'Ruby on Rails'])}
-                  {exp_list(['Communication','Pair-programming', 'Remote Work', 'Problem-Solving'])}
+                  <div className='flex  flex-wrap gap-8'>
+                  {/* gap-2 phone:justify-between sm:justify-start sm:gap-16
+                            bg-left bg-auto */}
+                       <div className=''>
+                     
+                           <Experience exp = {['Javascript (ES6+)','Next.js 13','React', 'python', 'Ruby', 'Ruby on Rails']} 
+                            title={'Front-End'}/>
+
+                       </div>
+
+                       <div>
+                       <Experience exp = {['Communication','Pair-programming', 'Remote Work', 'Problem-Solving']} 
+                       title={'Back-End'} />
+                       </div>
+
+                       <div>
+                          <Experience exp = {['Github','', 'Remote Work', 'Problem-Solving']} 
+                          title={'Technology'} />
                   
+                       </div>
+
+                       <div>
+                          
+                          <Experience exp = {['Communication','Pair-programming', 'Remote Work', 'Problem-Solving']} 
+                           title={'soft-skills'} />
+                       </div>
+
+
                   </div>
               </div>
-              
+              {/* grid-cols-1  phone:grid-cols-2 mdx:gride-cols-4 */}
              
 
               
