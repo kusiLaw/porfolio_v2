@@ -1,14 +1,14 @@
-import formValidation from '@/utilities/validation'
 import { useState } from 'react'
 import axios from 'axios'
-import InputText from '../input/input'
-import TextArea from '../input/textarea'
 
 
 const ContactForm = () => {
 
  const [errorMsg, setErrorMgs] = useState('')
  const [success, setSuccess] = useState(false)
+ const [name, setName] = useState('');
+ const [email, setEmail] = useState('');
+ const [massage, setMassage] = useState('');
 
  const  formSpare = async (body) =>{
     return await axios.post('https://formspree.io/f/xaykwwqa',body, {
@@ -27,58 +27,74 @@ const handleForm = (e) =>{
    setErrorMgs('')
    setSuccess(false)
 
-   if(!formValidation.name(name.value)){
-    setErrorMgs('Invalid name format')
-    return
-   }
-
  
-   if(!formValidation.email(email.value)){
-    setErrorMgs('Invalid email address')
-    return
-   }
-  
-
    const formData = new FormData(e.target);
    const formJson = Object.fromEntries(formData.entries());
  
 
    formSpare(formJson).then( () => {
     name.value = ''
-    email.value = ''
+    setName('')
+    setEmail('')
+    setMassage('')
     setSuccess(true)
     setErrorMgs('Thank you for contacting me. You will hear from me in less than 12 hours.')
    
     })
     .catch( () => {
-     e.target.elements.name.value = ''
-     email.value = ''
      setErrorMgs('Error ocurred, please try again')
-    
     });
 
     setTimeout(() => {
      setErrorMgs('')
      setSuccess(false)
-   }, "5000");
+   }, "8000");
 
 }
 
   return (
     <>
-      <form onSubmit={handleForm} action="" method="post" className='flex flex-col justify-center  gap-6'>
-                     <div className='flex flex-col gap-6 md:flex-row md:justify-between md:gap-4 xl:flex-col 
-                                     xl:gap-6 '>
+      <form onSubmit={handleForm} action="" method="post" className='flex flex-col justify-center  gap-4'>
+                     <div className='flex flex-col gap-4 md:flex-row md:justify-between md:gap-4 xl:flex-col 
+                                     xl:gap-4 '>
                         <div className='form_name md:w-full'>
-                           <InputText  label='Name' name='name'/>
+                           <div className='relative text-light_text_color dark:text-dark_text_color'>
+                                    <label htmlFor='name' className=' py-4   pointer-events-none'>Name *</label>
+                                    <input type='text'  required name='name' id='name' minLength='2' maxLength='45'  placeholder='Full Name'
+                                       pattern='[A-Za-z\s*]+{1,45}' title='Invalid name format'
+                                           value={name} onChange={e => setName(e.target.value.replace(/\s+/g, ' ')) 
+                                           }
+                                    className='w-full py-2 px-1 rounded-sm text-inherit border-collapse valid:border-2 valid:border-light_accent valid:dark:border-dark_accent 
+                                     dark:bg-dark_text_header dark:text-dark_bg bg-light_accent_divider 
+                                     focus:border-2 focus:border-light_accent dark:focus:border-dark_accent' />
+                           </div>
                         </div>
                          <div className='form_email md:w-full'>
-                            <InputText  label='Email' name='email' type='email'/>
+                           <div className='relative text-light_text_color dark:text-dark_text_color'>
+                                      <label htmlFor='email' className=' py-4  pointer-events-none'>Email *</label>
+                                      <input type='email'  required name='email' id='email' minLength='5' maxLength='65'  placeholder='Email Address'
+                                         pattern='\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$' title='Invalid Email format'
+                                             value={email} onChange={e => setEmail(e.target.value.replace(/\s+/g, ' ')) }
+                                      className='w-full py-2 px-1 rounded-sm text-inherit border-collapse valid:border-2  valid:border-light_accent valid:dark:border-dark_accent 
+                                       dark:bg-dark_text_header dark:text-dark_bg bg-light_accent_divider 
+                                       focus:border-2 focus:border-light_accent dark:focus:border-dark_accent' />
+                             </div>
                          </div>
                      </div>
           
                    <div className='form_text' >
-                        <TextArea label="Message" name="message" maxLength='500'/>
+                     <div className='relative  w-full text-light_text_color dark:text-dark_text_color'>
+                         <label htmlFor={name} className='py-2 pointer-events-none  
+                         dark:text-dark_text_color
+                          '>Text *</label>
+                         <textarea   required  name='massage' id='massage' rows='6' cols='10' minLength='5' maxLength='256' 
+                                    placeholder='Text'
+                                   pattern='\w+\s*' title='Invalid format'
+                                   value={massage} onChange={e => setMassage(e.target.value) }
+                         className='w-full py-2 px-2 text-inherit dark:bg-dark_text_header dark:text-dark_bg  resize-none 	border-collapse valid:border-2  valid:border-light_accent valid:dark:border-dark_accent
+                         bg-light_accent_divider focus:border-0 focus:border-light_accent dark:focus:border-dark_accent' />
+                         
+                      </div>
                    </div>
                    <div className='flex justify-between pb-5 gap-3' >
                       {
