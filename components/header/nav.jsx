@@ -19,10 +19,10 @@ const Nav = ({isOpen, setOpen}) =>{
         ['Contact', '#contact'],
       ].map(([title, url], index) => (
         <Link key={index} href={url}  className={isOpen ? "w-full py-4 flex items-center hover:bg-light_accent_divider hover:dark:bg-dark_bg_secondary  " :
-        "px-3 py-2 font-medium" } onClick={()=>{ isOpen && setOpen(false)}}>
+        "px-3 py-2 font-medium hover:scale-150 duration-200" } onClick={()=>{ isOpen && setOpen(false)}}>
                 <span className='md:hidden xl:inline-block mr-3  text-light_accent_dark dark:text-dark_accent italic'> 0{index + 1}.</span> 
                 <span className='dark:text-dark_text_header text-xl  
-                                  hover:border-b-light_accent'>{title}</span>
+                                  hover:border-b-light_accent '>{title}</span>
         </Link>
       ))}
 

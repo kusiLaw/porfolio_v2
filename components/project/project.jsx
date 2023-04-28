@@ -58,10 +58,10 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
 
                 <div className= { order === 0 ? "flex justify-end  self-end text-2xl gap-4 p-3 mdx:p-2 font-bold " :
                                                 "flex justify-end  self-end text-2xl gap-4 p-3 mdx:p-2 mdx:justify-start font-bold"} >
-                    <Link href={source} className="hover:dark:text-dark_accent">
+                    <Link href={source} className="hover:dark:text-dark_accent hover:scale-110 duration-200">
                        <AiFillGithub />
                     </Link>
-                   <Link href={live} className="hover:dark:text-dark_accent">
+                   <Link href={live} className="hover:dark:text-dark_accent hover:scale-110 duration-200">
                       <MdOpenInNew />
                    </Link>
                 </div>

@@ -58,9 +58,9 @@ const Header = () => {
              <Resume />
             </div>
             
-            <div className='text-2xl -rotate-45'>{
+            <div className='text-2xl -rotate-45 transition-all duration-300 animate-mode'>{
                darkMode === true ? 
-               <BsFillBrightnessHighFill onClick={handel_darkMode} /> : 
+               <BsFillBrightnessHighFill onClick={handel_darkMode}  /> : 
 
                <MdNightlight onClick={handel_darkMode} />} 
             </div>

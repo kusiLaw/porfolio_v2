@@ -58,13 +58,18 @@ module.exports = {
      keyframes: {
       bgSlide: {
        'from' : { 'background-position': '0'},
-       'to' :  { 'background-position': '-200%'}
-      }
+       'to' :  { 'background-position' : '-200%'}
+      },
+      spin: {
+       'from': {transform: 'rotate(0deg)'},
+       "to" : {transform: 'rotate(360deg)'}
+     }
      },
 
 
       animation: {
         'name_animate' : 'bgSlide 3s linear infinite',
+        'mode' : 'spin 3s linear ',
       },
 
       backgroundImage: {

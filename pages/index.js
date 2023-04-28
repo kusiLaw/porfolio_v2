@@ -37,7 +37,7 @@ export default function Home() {
              {/* border-solid border-2 border-red-200 */}
              <h1 className='leading-relaxed bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
                  <span className='block text-lg text-light_text_color'>Hi, my name is</span> 
-                 <span className=' block text-name_font text-transparent animate-[bgSlide_3s_ease_in_out] '>Lawrence Addai Kusi.</span>
+                 <span className=' block text-name_font text-transparent animate-bgSlide '>Lawrence Addai Kusi.</span>
              </h1>
 
              <p className='block text-2xl sm:tracking-wider	mt-3 mb-3 text-light_text_header 
@@ -56,7 +56,7 @@ export default function Home() {
                     <Link href='#' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 border-dotted text-light_accent 
                     border-light_accent dark:border-dark_accent dark:text-dark_accent  dark:bg-transparent  
                     hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  
-                    hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent' >
+                    hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent ' >
                     Contact Me <span className='inline-block m-auto' > <FaLongArrowAltRight/> </span></Link>
              </div>
          </div>

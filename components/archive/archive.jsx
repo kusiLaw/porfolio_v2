@@ -29,13 +29,13 @@ const Archive = ({text, title, main_tech, live = "", source ="", other_techs = [
       <div className='flex justify-between items-center mb-8'>
           <div className='text-4xl text-light_accent dark:text-dark_accent'>{iconLibrary[main_tech]? iconLibrary[main_tech](): <FiFolder/>}</div>
           <div className='flex gap-3 text-2xl'>
-             <dev className=' hover:dark:text-dark_accent'> 
-                  <Link href={source}>
+             <dev className=' hover:dark:text-dark_accent hover:scale-110 duration-200'> 
+                  <Link href={source} className=''>
                        <AiFillGithub />
                   </Link>
               </dev>
-             <dev className=' hover:dark:text-dark_accent'>   
-                   <Link href={live}>
+             <dev className=' hover:dark:text-dark_accent hover:scale-110 duration-200'>   
+                   <Link href={live} className=''>
                       <MdOpenInNew />
                    </Link>
               </dev>

@@ -6,19 +6,19 @@ import Link from "next/link"
 const SocialIcons = () => {
   return (
    < >
-   <Link href="https://github.com/kusiLaw" target="blank" className="hover:dark:text-dark_accent">
+   <Link href="https://github.com/kusiLaw" target="blank" className="hover:dark:text-dark_accent  hover:scale-110 duration-200">
       <FaGithub  className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
    </Link>
-   <Link href="https://www.linkedin.com/in/lawrence-addai-kusi/" target="blank"  className="hover:dark:text-dark_accent">
-      <FaLinkedinIn className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
+   <Link href="https://www.linkedin.com/in/lawrence-addai-kusi/" target="blank"  className="hover:dark:text-dark_accent hover:scale-110 duration-200">
+      <FaLinkedinIn className="hover:dark:text-dark_accent hover:text-light_accent_dark" />
    </Link>
-   <Link href="https://wellfound.com/u/lawrence-kusi-addai" target="blank">
+   <Link href="https://wellfound.com/u/lawrence-kusi-addai" target="blank" className="hover:dark:text-dark_accent hover:scale-110 duration-200">
       <FaAngellist className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
    </Link>
-   <Link href="https://medium.com/@lawcubegsm/" target="blank">
+   <Link href="https://medium.com/@lawcubegsm/" target="blank" className="hover:dark:text-dark_accent hover:scale-110 duration-200">
       <AiOutlineMedium className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
    </Link>
-   <Link href="mailto:lawrence.kusi.addai@gmail.com" >
+   <Link href="mailto:lawrence.kusi.addai@gmail.com"  className="hover:dark:text-dark_accent hover:scale-110 duration-200" >
       <AiOutlineMail className="hover:dark:text-dark_accent hover:text-light_accent_dark"/>
    </Link>
   </>

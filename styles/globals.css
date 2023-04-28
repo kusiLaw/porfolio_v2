@@ -8,7 +8,7 @@
 
     input:focus ~ label,
     input:valid ~ label,
-    input:invalid ~ label,
+    /* input:invalid ~ label, */
     textarea:focus ~ label,
     textarea:valid ~ label {
      top: -1.8rem;
@@ -18,8 +18,7 @@
      padding-left:0px
     }
     /* input:invalid ~ label{
-     color:red;
-     border: 2px lightcoral
+     color:inherit;
     } */
 }
 
