@@ -1,0 +1,124 @@
+{
+
+    "projects" :[ 
+                  {
+                    "img" : "/web.png",
+                    "text" : "",
+                    "title" : "Free Web Course",
+                    "tech_stack" : ["NextJS", "React", "Tailwind"],
+                    "source" : "",
+                    "live" : "",
+                    "type" : "Web Ful-Stack",
+                    "year" : "2023"
+                  },
+                  {
+                     "img" : "/web.png",
+                     "text" : "",
+                     "title" : "Free Web Course",
+                     "tech_stack" : ["NextJS", "React", "Tailwind"],
+                     "source" : "",
+                     "live" : "",
+                     "type" : "Web Ful-Stack",
+                     "year" : "2023"
+                  },
+                  {
+                    "img" : "/web.png",
+                    "text" : "",
+                    "title" : "Free Web Course",
+                    "tech_stack" : ["NextJS", "React", "Tailwind"],
+                    "source" : "",
+                    "live" : "",
+                    "type" : "Web Ful-Stack",
+                    "year" : "2023"
+                  },
+                  {
+                     "img" : "/web.png",
+                     "text" : "",
+                     "title" : "Free Web Course",
+                     "tech_stack" : ["NextJS", "React", "Tailwind"],
+                     "source" : "",
+                     "live" : "",
+                     "type" : "Web Ful-Stack",
+                     "year" : "2023"
+                  }
+              ],
+
+    "extra_projects" : [
+                         {
+                          "text" : "",
+                          "title" : "Free Web Course",
+                          "main_tech" : "",
+                          "tech_stack" : ["NextJS", "React", "Tailwind"],
+                          "source" : "",
+                          "live" : "",
+                          "type" : "Web Ful-Stack",
+                          "year" : "2023"
+                        },
+                        {
+                         "text" : "",
+                         "title" : "Free Web Course",
+                         "main_tech" : "",
+                         "tech_stack" : ["NextJS", "React", "Tailwind"],
+                         "source" : "",
+                         "live" : "",
+                         "type" : "Web Ful-Stack",
+                         "year" : "2023"
+                       },
+
+                       {
+                        "text" : "",
+                        "title" : "Free Web Course",
+                        "main_tech" : "",
+                        "tech_stack" : ["NextJS", "React", "Tailwind"],
+                        "source" : "",
+                        "live" : "",
+                        "type" : "Web Ful-Stack",
+                        "year" : "2023"
+                      },
+
+                      {
+                       "text" : "",
+                       "title" : "Free Web Course",
+                       "main_tech" : "",
+                       "tech_stack" : ["NextJS", "React", "Tailwind"],
+                       "source" : "",
+                       "live" : "",
+                       "type" : "Web Ful-Stack",
+                       "year" : "2023"
+                     },
+
+                     {
+                      "text" : "",
+                      "title" : "Free Web Course",
+                      "main_tech" : "",
+                      "tech_stack" : ["NextJS", "React", "Tailwind"],
+                      "source" : "",
+                      "live" : "",
+                      "type" : "Web Ful-Stack",
+                      "year" : "2023"
+                    }
+                  ],
+    "experience" : [
+                 {
+                  "cat": "Front End",
+                  "exp": ["JavaScript (ES6+)", "React", "NextJS", "CSS", "TailwindCSS"]
+                 }
+                 ,
+                 {
+                  "cat": "Back End",
+                  "exp": ["Ruby on Rails", "Python", "NodeJS", "Ruby" ]
+                 }
+                 ,
+                 {
+                  "cat": "Technologies",
+                  "exp": [ "Git", "GitHub", "Heroku", "Netlify", "Mobile/Responsive Development"," RSpec", "TDD", "Chrome Dev Tools" ]
+                 }
+                 ,
+                 {
+                  "cat": "Soft Skills",
+                  "exp": ["Communication", "Problem-Solving", "Remote Work", "Pair-Programming", "Teamwork",  "Mentoring", "Collaboration" ]
+                 }
+                 
+    ]
+
+ }  
