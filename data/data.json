@@ -2,12 +2,12 @@
 
     "projects" :[ 
                   {
-                    "img" : "/web.png",
-                    "text" : "",
-                    "title" : "Free Web Course",
-                    "tech_stack" : ["NextJS", "React", "Tailwind"],
-                    "source" : "",
-                    "live" : "",
+                    "img" : "/laky_web.png",
+                    "text" : "LakyPos-Web is a website built for LakyPos software which is a newer version of lakyPhonePOS. LakyPos software is a Point Of Sale app used to manage wholesale or retail shops.",
+                    "title" : "Laky-P.O.S",
+                    "tech_stack" : ["NextJS", "React", "Tailwind", "Ruby on Rials"],
+                    "source" : "https://github.com/kusiLaw/lakypos_web",
+                    "live" : "https://lakypos-web.vercel.app/",
                     "type" : "Web Ful-Stack",
                     "year" : "2023"
                   },
@@ -23,80 +23,102 @@
                   },
                   {
                     "img" : "/web.png",
-                    "text" : "",
+                    "text" : "A simple course demo website that allows students to sign up for a course. It shows the details of the course including the lecturer, Course descriptions, and Course activities. Built with JavaScript.",
                     "title" : "Free Web Course",
-                    "tech_stack" : ["NextJS", "React", "Tailwind"],
-                    "source" : "",
-                    "live" : "",
-                    "type" : "Web Ful-Stack",
-                    "year" : "2023"
+                    "tech_stack" : ["JavaScript", "HTML", "CSS"],
+                    "source" : "https://github.com/kusiLaw/web-dev-course",
+                    "live" : "https://kusilaw.github.io/web-dev-course/",
+                    "type" : "Web Front-end",
+                    "year" : "Aug, 2022"
                   },
                   {
-                     "img" : "/web.png",
-                     "text" : "",
-                     "title" : "Free Web Course",
-                     "tech_stack" : ["NextJS", "React", "Tailwind"],
-                     "source" : "",
-                     "live" : "",
-                     "type" : "Web Ful-Stack",
-                     "year" : "2023"
+                     "img" : "/portfolio_v1.png",
+                     "text" : "This is my portfolio web project. It allows developers to present their personal projects. The project has different sections which include self-presentation, projects, about, and contact us form. Built using JavaScript.",
+                     "title" : "Portfolio V1",
+                     "tech_stack" : ["JavaScript", "HTML", "CSS"],
+                     "source" : "https://github.com/kusiLaw/portfolio",
+                     "live" : "https://kusilaw.github.io/portfolio/",
+                     "type" : "Web Front-end",
+                     "year" : "July, 2022"
                   }
               ],
 
     "extra_projects" : [
+                          {
+                           "title" : "LakyPhone P.O.S",
+                           "text" : "This is a Point-Of-Sales desktop app built specifically for managing mobile phone retail shops. It is a robust, scalable, and powerful app with a modern design (Dracula theme). The newer version of this app(LakyPos) is general-purpose and can be used in almost all settings.  Built with Python, PySide, and CSS.",
+                           "main_tech" : "Python",
+                           "tech_stacks" : ["Python", "PySide", "MySql", "Numpy", "Pandas"],
+                           "source" : "https://github.com/kusiLaw/To-Do-List",
+                           "live" : "https://kusilaw.github.io/To-Do-List/",
+                           "type" : "Web Front-end",
+                           "year" : "Sept, 2021"
+                         },
                          {
-                          "text" : "",
-                          "title" : "Free Web Course",
-                          "main_tech" : "",
-                          "tech_stack" : ["NextJS", "React", "Tailwind"],
-                          "source" : "",
-                          "live" : "",
-                          "type" : "Web Ful-Stack",
-                          "year" : "2023"
+                          "title" : "To Do List",
+                          "text" : "This app helps users to manage and organize their tasks. Users can add a new task, re-arrange tasks using drag and drop, remove tasks, edit a task description, mark tasks as completed, and remove all the completed tasks. Built with JavaScript.",
+                          "main_tech" : "JavaScript",
+                          "tech_stacks" : ["JavaScript", "HTML", "CSS"],
+                          "source" : "https://github.com/kusiLaw/To-Do-List",
+                          "live" : "https://kusilaw.github.io/To-Do-List/",
+                          "type" : "Web Front-end",
+                          "year" : "Aug, 2022"
                         },
-                        {
-                         "text" : "",
-                         "title" : "Free Web Course",
-                         "main_tech" : "",
-                         "tech_stack" : ["NextJS", "React", "Tailwind"],
-                         "source" : "",
-                         "live" : "",
-                         "type" : "Web Ful-Stack",
-                         "year" : "2023"
-                       },
+                     
 
                        {
-                        "text" : "",
-                        "title" : "Free Web Course",
-                        "main_tech" : "",
-                        "tech_stack" : ["NextJS", "React", "Tailwind"],
-                        "source" : "",
+                        "title" : "BudgiSEE",
+                        "text" : "BudgiSEE is a simple mobile web application for managing budgets and expenses. Users can create a new category base on budgets and add all expenses that belong to that category. Built with Ruby on Rails.",
+                        "main_tech" : "Rails",
+                        "tech_stacks" : ["Ruby on Rails", "CSS", "Postgres Sql"],
+                        "source" : "https://github.com/kusiLaw/budget_app",
                         "live" : "",
                         "type" : "Web Ful-Stack",
-                        "year" : "2023"
+                        "year" : "Jan, 2023"
                       },
-
                       {
-                       "text" : "",
-                       "title" : "Free Web Course",
-                       "main_tech" : "",
-                       "tech_stack" : ["NextJS", "React", "Tailwind"],
-                       "source" : "",
+                       "title" : "Book Store",
+                       "text" : "Book Store is a simple Single Page App (SPA) that allows users to make add,remove, and update books with respective author. Built with react .",
+                       "main_tech" : "React",
+                       "tech_stacks" : ["JavaScript", "React", "Redux",  "CSS"],
+                       "source" : "https://github.com/kusiLaw/book_store",
                        "live" : "",
-                       "type" : "Web Ful-Stack",
-                       "year" : "2023"
+                       "type" : "Web Front-end",
+                       "year" : "Sept, 2022"
                      },
 
-                     {
-                      "text" : "",
-                      "title" : "Free Web Course",
-                      "main_tech" : "",
-                      "tech_stack" : ["NextJS", "React", "Tailwind"],
-                      "source" : "",
+                      {
+                       "title" : "Space Travelers' Hub",
+                       "text" : "The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section. The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking. Built with React",
+                       "main_tech" : "React",
+                       "tech_stacks" : ["React", "Redux", "CSS"],
+                       "source" : "https://github.com/kusiLaw/Space_Travelers_Hub",
+                       "live" : "",
+                       "type" : "Web Front-end",
+                       "year" : "Oct, 2023"
+                     },
+
+                      {
+                      "title" : "Leaderboard",
+                      "text" : "BudgiSEE is a simple mobile web application for managing budgets and expenses. Users can create a new category base on budgets and add all expenses that belong to that category. Built with Ruby on Rails.",
+                      "main_tech" : "JavaScript",
+                      "tech_stacks" : ["JavaScript", "CSS", "Webpack",  "HTML"],
+                      "source" : "https://github.com/kusiLaw/leaderboard",
                       "live" : "",
                       "type" : "Web Ful-Stack",
-                      "year" : "2023"
+                      "year" : "Jan, 2022"
                     }
+                    ,
+                    {
+                     "title" : "Leaderboard",
+                     "text" : "BudgiSEE is a simple mobile web application for managing budgets and expenses. Users can create a new category base on budgets and add all expenses that belong to that category. Built with Ruby on Rails.",
+                     "main_tech" : "JavaScript",
+                     "tech_stacks" : ["JavaScript", "CSS", "Webpack",  "HTML"],
+                     "source" : "https://github.com/kusiLaw/leaderboard",
+                     "live" : "",
+                     "type" : "Web Ful-Stack",
+                     "year" : "Jan, 2022"
+                   }
                   ],
     "experience" : [
                  {
