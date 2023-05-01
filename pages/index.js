@@ -9,9 +9,17 @@ import { FaLongArrowAltRight} from "react-icons/fa"
 import ContactForm from '@/components/form/form'
 import Experience from '@/components/experince_list/experience'
 
+
+import loadData from '@/lib/load_data'
+import { useState } from 'react'
+
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({data}) {
+  const {experience = [] ,projects = [],  extra_projects = []} = data
+  const [viewAll, setViewAll] = useState(false)
+
+
 
   return (
    <Layout>
@@ -21,7 +29,7 @@ export default function Home() {
              {/* border-solid border-2 border-red-200 */}
              <h1 className='leading-relaxed bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
                  <span className='block text-lg text-light_text_color'>Hi, my name is</span> 
-                 <span className=' block text-name_font text-transparent animate-bgSlide '>Lawrence Addai Kusi.</span>
+                 <span className=' block text-name_font text-transparent  '>Lawrence Addai Kusi.</span>
              </h1>
 
              <p className='block text-2xl sm:tracking-wider	mt-3 mb-3 text-light_text_header 
@@ -51,84 +59,37 @@ export default function Home() {
                <Title text={'Projects'}/>
            </div>
            <div className='flex flex-col gap-[5rem] lg:gap-[110px] items-center '>
-           
-               <Project 
-                   img={'/web.png'}
-                   text={'If you like what you see and need help \
-                   on a project, I am available for hire kkhjhkjkj \
-                   .If you like what you see and need help \
-                   on a project, I am available for hire kkhjhkjkj '}
-                   title ={'Free Web Course'}
-                   tech_stack = {['NextJS', "React", "Tailwind"]}
-                   source ={'#'}
-                   live = {'#'}
-                   type ={'Web'}
-                   year = {'2023'}
-                   order = {0}
-                />
-
-     
-             
-              <Project 
-                 img={'/lak.png'}
-                 text={'If you like what you see and need help \
-                 on a project, I am available for hire kkhjhkjkj \
-                 .If you like what you see and need help \
-                 on a project, I am availabs  d dd \
-                 le for hire kkhjhkjkj '}   
-                 title ={'Portfolio'}
-                 tech_stack = {['NextJS', "React", "Tailwind", "Rails"]}
-                 source ={'#'}
-                 live = {'#'}
-                 type ={'Web'}
-                 year = {'2023'}
-                 order = {1}
-              />
- 
-              
+       
+               {projects.map((project, index) =>(
+                <Project {...project}  order={index % 2 }  key={project.title}/> 
+               ))}
            </div>
-       </section>
+      </section>
        
        <section id='extra_projects' className='mt-20 md:mb-28 pr-2 pl-2 '>
            <div className='mb-10'>
                <Title text={'More Projects'}/>
            </div>
-           <div className='grid md:grid-cols-2 xl:grid-cols-3 gap-4 content-start'>
-              <Archive 
-              title={'To do list'}
-              main_tech = {'Html'}
-              other_techs = {['Tailwind', 'boostrap', 'Css']}
-               text={'If you like what you see and need help \
-                 on a project, I am available for hire kkhjhkjkj \
-                 .If you like what you see and need help \
-                 on a project, I am availabs dddd dddd ddddddd ddddddd dddd dddddddd ddd dddddddd dddddd dddd dddd ddddd ddddd dd dd dd dd dd \
-                 le for hire kkhjhkjkj '} 
-              />
-                <Archive 
-              title={'To do list'}
-              main_tech = {'React'}
-              other_techs = {['Tailwind', 'boostrap', 'Css']}
-               text={'If you like what you see and need help \
-                 on a project, I am available for hire kkhjhkjkj \
-                 .If you like what you see and need help \
-                 on a project, I am availabs dddd dddd ddddddd ddddddd dddd dddddddd ddd dddddddd dddddd dddd dddd ddddd ddddd dd dd dd dd dd \
-                 le for hire kkhjhkjkj '} 
-              />
-                <Archive 
-              title={'To do list'}
-              main_tech = {'Python'}
-              other_techs = {['Tailwind', 'boostrap', 'Css']}
-               text={'If you like what you see and need help \
-                 on a project, I am available for hire kkhjhkjkj \
-                 .If you like what you see and need help \
-                 on a project, I am availabs dddd dddd ddddddd ddddddd dddd dddddddd ddd dddddddd dddddd dddd dddd ddddd ddddd dd dd dd dd dd \
-                 le for hire kkhjhkjkj '} 
-              />
+           <div className='grid md:grid-cols-2 xl:grid-cols-2 gap-4 xl:gap-6 content-start'>
+              { viewAll ? extra_projects.map((project) =>(
+                <Archive {...project} key={project.title}/> )) :
+
+                extra_projects.slice(0,4).map((project) =>(
+                <Archive {...project} key={project.title}/> )) 
+                }
            </div>
+           { !viewAll && <div className='flex justify-end py-6 mr-1 text-light_accent dark:text-dark_accent'>
+              <button className='hover:underline hover:underline-offset-[12px] border-collapse bg-inherit ' onClick={ () =>{
+                 setViewAll(true)
+              }
+              
+              }>View all</button>
+           </div>}
        </section>
 
-
-       <section id='about' className='mt-20 md:mt-28 pr-2 pl-2 about-bg'>
+       {/* bg-[url("../public/pattern-quotes.svg")] */}
+       <section id='about' className='mt-20 md:mt-28 pr-2 pl-2 
+       '>
           <div className='py-10'>
              <Title text={'About Me'} />
           </div>
@@ -152,32 +113,12 @@ export default function Home() {
               </div>
               <div className=''>
                   <div className='flex  flex-wrap gap-8'>
-                  {/* gap-2 phone:justify-between sm:justify-start sm:gap-16
-                            bg-left bg-auto */}
-                       <div className=''>
                      
-                           <Experience exp = {['Javascript (ES6+)','Next.js 13','React', 'python', 'Ruby', 'Ruby on Rails']} 
-                            title={'Front-End'}/>
-
-                       </div>
-
-                       <div>
-                       <Experience exp = {['Communication','Pair-programming', 'Remote Work', 'Problem-Solving']} 
-                       title={'Back-End'} />
-                       </div>
-
-                       <div>
-                          <Experience exp = {['Github','', 'Remote Work', 'Problem-Solving']} 
-                          title={'Technology'} />
-                  
-                       </div>
-
-                       <div>
-                          
-                          <Experience exp = {['Communication','Pair-programming', 'Remote Work', 'Problem-Solving']} 
-                           title={'soft-skills'} />
-                       </div>
-
+                     {experience.map(exp =>(
+                      <div className=''>
+                          <Experience {...exp} key={exp.title}/>
+                      </div>
+                     ))}
 
                   </div>
               </div>
@@ -209,4 +150,12 @@ export default function Home() {
  
    </Layout>
   )
+}
+
+
+export async function getStaticProps(context) {
+ const data = loadData()
+ return {
+   props: {data}, // will be passed to the page component as props
+ }
 }
