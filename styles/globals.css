@@ -4,29 +4,11 @@
 
 
 
-@layer base {
 
-    input:focus ~ label,
-    input:valid ~ label,
-    /* input:invalid ~ label, */
-    textarea:focus ~ label,
-    textarea:valid ~ label {
-     top: -1.8rem;
-     left: 0;
-     /* color: theme('dark:colors.dark_accent  colors.light_accent'); */
-     font-size: 1rem;
-     padding-left:0px
-    }
-    /* input:blank
-    {
-     background-color:red;
-     border: none;
-    } */
-}
 
 .about-bg{
 
- background-image: url(../public/pattern-quotes.svg);
+ /* background-image: url(../public/pattern-quotes.svg); */
  background-size: 3rem auto;
  background-position: right 0rem top 3.5rem;
  background-image: green;

@@ -87,7 +87,7 @@ const handleForm = (e) =>{
                          <label htmlFor={name} className='py-2 pointer-events-none  
                          dark:text-dark_text_color
                           '>Text *</label>
-                         <textarea   required  name='massage' id='massage' rows='6' cols='10' minLength='5' maxLength='256' 
+                         <textarea   required  name='massage' id='massage' rows='4' cols='10' minLength='5' maxLength='256' 
                                     placeholder='Text'
                                    pattern='\w+\s*' title='Invalid format'
                                    value={massage} onChange={e => setMassage(e.target.value) }

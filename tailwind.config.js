@@ -8,9 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+    
       colors: {
-         'light_bg': '#fff',
+         'light_bg': ' #fff',
          'accent_light' : '#56cbf9',
          'light_accent_divider' : '#f3f6f9',
          'light_accent' : '#005ce1',
@@ -53,19 +53,24 @@ module.exports = {
 
      keyframes: {
       bgSlide: {
-       'from' : { 'background-position': '0'},
-       'to' :  { 'background-position' : '-200%'}
+       from : { 'background-position': '0'},
+       to :  { 'background-position' : '-200%'}
       },
       spin: {
        'from': {transform: 'rotate(0deg)'},
        "to" : {transform: 'rotate(360deg)'}
-     }
+     },
+     up_down: {
+      'from': {margin : '-100% '},
+      "to" : {margin: '0%'}
+    }
      },
 
 
       animation: {
         'name_animate' : 'bgSlide 3s linear infinite',
         'mode' : 'spin 3s linear ',
+        'spin_up' : 'up_down 3s linear ',
       },
 
       backgroundImage: {

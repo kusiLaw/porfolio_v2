@@ -10,7 +10,7 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
     <div className='flex flex-col min-w-[320px] w-full  '>
         <div className={ order === 0 ? 'flex flex-col relative mdx:flex-row mdx:w-full' : 
                                        'flex flex-col relative mdx:flex-row-reverse mdx:w-full '}>
-           <div className= 'relative w-100 h-64 overflow-hidden shadow-md mdx:w-3/5 	' >
+           <div className= 'relative w-100 h-64 overflow-hidden shadow-md mdx:w-3/6 	' >
 
               <Image src={img} 
               placeholder="blur" 
@@ -34,7 +34,7 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
 
                               h-fit shadow-md -mt-24 mdx:mt-0 z-30
 
-                             mdx:flex-col mdx:justify-between	  mdx:relative mdx:top-0 mdx:h-80 mdx:w-2/5 
+                             mdx:flex-col mdx:justify-between	  mdx:relative mdx:top-0 mdx:h-80 mdx:w-3/6 
                              mdx:bg-transparent mdx:dark:bg-transparent mdx:shadow-none
                       
                              '>
@@ -42,14 +42,14 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                     <SubTile text={title }/>
                 </div>
 
-                <div className= { order === 0 ? "text-light_accent dark:text-dark_accent flex justify-end pr-2 py-1  uppercase text-xs gap-4 ":
-                                                "text-light_accent dark:text-dark_accent flex justify-end mdx:justify-start py-1 pr-2 mdx:pl-2 uppercase text-xs gap-4 " }>
+                <div className= { order === 0 ? "text-light_accent dark:text-dark_accent flex justify-end pr-2 py-1  uppercase text-xs gap-4 italic  ":
+                                                "text-light_accent dark:text-dark_accent flex justify-end mdx:justify-start py-1 pr-2 mdx:pl-2 uppercase text-xs gap-4 italic" }>
                    {type} {" "}  {year}
                 </div>
                 <div className={ order === 0 ? "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap \
-                mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-ml-40 mdx:shadow-lg  mdx:z-10 mdx:m-1 " :
+                mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-ml-28 mdx:shadow-lg  mdx:z-10 mdx:m-1  mdx:rounded-md " :
                 "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap \
-                 mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-mr-40 mdx:shadow-lg  mdx:z-10 mdx:m-1"
+                 mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-mr-28 mdx:shadow-lg  mdx:z-10 mdx:m-1 mdx:rounded-md"
                 }>
                    {text}
                 </div>

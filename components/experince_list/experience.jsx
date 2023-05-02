@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Experience = ({exp, title}) => {
+const Experience = ({exp, cat}) => {
   return (
    <div className=''>
-      <h3 className='text-lg text-light_accent dark:text-dark_accent my-2'>{title}</h3>
+      <h3 className='text-lg text-light_accent dark:text-dark_accent my-2'>{cat}</h3>
       <ul>
        {exp.map((el) => (<li key={el} 
        className='relative pl-5 '>
