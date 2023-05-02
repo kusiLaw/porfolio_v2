@@ -18,7 +18,7 @@
                      "tech_stack" : ["NextJS", "React", "Tailwind"],
                      "source" : "",
                      "live" : "",
-                     "type" : "Web Ful-Stack",
+                     "type" : "Web, Ful-Stack",
                      "year" : "2023"
                   },
                   {
@@ -28,7 +28,7 @@
                     "tech_stack" : ["JavaScript", "HTML", "CSS"],
                     "source" : "https://github.com/kusiLaw/web-dev-course",
                     "live" : "https://kusilaw.github.io/web-dev-course/",
-                    "type" : "Web Front-end",
+                    "type" : "Web, Front-end",
                     "year" : "Aug, 2022"
                   },
                   {
@@ -38,7 +38,7 @@
                      "tech_stack" : ["JavaScript", "HTML", "CSS"],
                      "source" : "https://github.com/kusiLaw/portfolio",
                      "live" : "https://kusilaw.github.io/portfolio/",
-                     "type" : "Web Front-end",
+                     "type" : "Web, Front-end",
                      "year" : "July, 2022"
                   }
               ],
@@ -51,7 +51,7 @@
                            "tech_stacks" : ["Python", "PySide", "MySql", "Numpy", "Pandas"],
                            "source" : "https://github.com/kusiLaw/To-Do-List",
                            "live" : "https://kusilaw.github.io/To-Do-List/",
-                           "type" : "Web Front-end",
+                           "type" : "Desktop, Front-end",
                            "year" : "Sept, 2021"
                          },
                          {
@@ -61,7 +61,7 @@
                           "tech_stacks" : ["JavaScript", "HTML", "CSS"],
                           "source" : "https://github.com/kusiLaw/To-Do-List",
                           "live" : "https://kusilaw.github.io/To-Do-List/",
-                          "type" : "Web Front-end",
+                          "type" : "Web, Front-end",
                           "year" : "Aug, 2022"
                         },
                      
