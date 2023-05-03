@@ -93,14 +93,14 @@
                      },
 
                       {
-                      "title" : "Leaderboard",
-                      "text" : "BudgiSEE is a simple mobile web application for managing budgets and expenses. Users can create a new category base on budgets and add all expenses that belong to that category. Built with Ruby on Rails.",
-                      "main_tech" : "JavaScript",
-                      "tech_stacks" : ["JavaScript", "CSS", "Webpack",  "HTML"],
-                      "source" : "https://github.com/kusiLaw/leaderboard",
-                      "live" : "",
-                      "type" : "Web Ful-Stack",
-                      "year" : "Jan, 2022"
+                      "title" : "Math magician",
+                      "text" : "Math magician is a simple Single Page App (SPA) that allows users to make simple calculations and read random math-related quotes. ",
+                      "main_tech" : "React",
+                      "tech_stacks" : ["React", "JavaScript", "CSS"],
+                      "source" : "https://github.com/kusiLaw/math_magicians",
+                      "live" : "#",
+                      "type" : "Web Front-end",
+                      "year" : "Sep, 2022"
                     }
                     
                   ],
