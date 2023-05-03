@@ -22,7 +22,7 @@ const Nav = ({isOpen, setOpen}) =>{
         "px-3 py-2 font-medium hover:animate-shake hover:animate-once" } onClick={()=>{ isOpen && setOpen(false)}}>
                 <span className='md:hidden xl:inline-block mr-3  text-light_accent_dark dark:text-dark_accent italic animate-Skew '> 0{index + 1}.</span> 
                 <span className='dark:text-dark_text_header text-xl  
-                                  hover:border-b-light_accent  hover:scale-[1.02] hover:animate-wiggle hover:animate-once'>{title}</span>
+                                  hover:border-b-light_accent transition-all duration-500  hover:md:text-light_accent hover:md:dark:text-dark_accent'>{title}</span>
         </Link>
       ))}
 
