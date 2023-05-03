@@ -6,9 +6,9 @@ const Experience = ({exp, cat}) => {
       <h3 className='text-lg text-light_accent dark:text-dark_accent my-2'>{cat}</h3>
       <ul>
        {exp.map((el) => (<li key={el} 
-       className='relative pl-5 '>
+       className='relative pl-5 hover:scale-[1.01] transition-all duration-500'>
              <span className='before:content-["▹"] before:absolute  before:left-0  
-             before:dark:text-dark_accent before:text-light_accent'>{el}</span>
+             before:dark:text-dark_accent before:text-light_accent  '>{el}</span>
        </li>
        ))
      

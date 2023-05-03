@@ -25,8 +25,8 @@ const Archive = ({text, title, main_tech, type="", year="", live = "", source ="
 
 
   return (
-    <div className='flex flex-col p-4 pt-8  shadow-md rounded-md bg-light_accent_divider dark:bg-dark_bg_secondary border border-1 border-light_text_header \
-     hover:scale-[1.02] duration-300'>
+    <div className='flex flex-col p-4 pt-8  shadow-md rounded-md bg-light_accent_divider dark:bg-dark_bg_secondary border-[0.2px]  border-light_text_header \
+      hover:border-light_accent hover:dark:border-dark_accent  hover:scale-[1.02] duration-500'>
       <div className='flex justify-between items-center mb-6'>
           <div className='text-4xl text-light_accent dark:text-dark_accent'>{iconLibrary[main_tech]? iconLibrary[main_tech](): <FiFolder/>}</div>
           <div className='flex gap-3 text-2xl'>

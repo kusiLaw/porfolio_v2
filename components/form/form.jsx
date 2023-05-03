@@ -106,7 +106,7 @@ const handleForm = (e) =>{
                     border-light_accent dark:border-dark_accent  dark:text-dark_accent 
                      dark:bg-transparent 
                      hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  hover:shadow-md
-                   hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent ' />
+                   hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent transition-all duration-300' />
                    </div>
                    
                 </form>

@@ -7,7 +7,7 @@ import Link from "next/link";
 const Project = ({img,text, live, title, source,year, type, order = 1, tech_stack = []}) => {
   return (
 // border-solid border-2 border-red-200 
-    <div className='flex flex-col min-w-[320px] w-full  '>
+    <div className='flex flex-col min-w-[320px] w-full '>
         <div className={ order === 0 ? 'flex flex-col relative mdx:flex-row mdx:w-full' : 
                                        'flex flex-col relative mdx:flex-row-reverse mdx:w-full '}>
            <div className= 'relative w-100 h-64 overflow-hidden  shadow-lg mdx:shadow-2xl mdx:w-3/6 	' >
@@ -20,7 +20,7 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                />
 
               <div className=" dark:absolute dark:bg-dark_hover_shallow_sm   mdx:dark:bg-dark_hover_shallow dark:hover:bg-transparent
-                   dark:top-0  bottom-0   right-0 left-0 "></div>
+                   dark:top-0  bottom-0   right-0 left-0 transition-all duration-500 "></div>
            </div>
 
            {/* // bg-white bg-grad_light_project  dark:bg-dark_bg_secondary */}
@@ -46,10 +46,10 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                                                 "text-light_accent dark:text-dark_accent flex justify-end mdx:justify-start py-1 pr-2 mdx:pl-2 uppercase text-xs gap-4 italic" }>
                    {type} {" - "}  {year}
                 </div>
-                <div className={ order === 0 ? "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap \
-                mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-ml-28 mdx:shadow-lg  mdx:z-10 mdx:m-1  mdx:rounded-md " :
-                "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap \
-                 mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-mr-28 mdx:shadow-lg  mdx:z-10 mdx:m-1 mdx:rounded-md"
+                <div className={ order === 0 ? "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap   hover:border-light_accent hover:dark:border-dark_accent duration-500 \
+                mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-ml-28 mdx:shadow-sm  mdx:z-10 mdx:m-1  mdx:rounded-md " :
+                "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap   hover:border-light_accent hover:dark:border-dark_accent transition-all duration-500\
+                 mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-mr-28 mdx:shadow-sm  mdx:z-10 mdx:m-1 mdx:rounded-md"
                 }>
                    {text}
                 </div>

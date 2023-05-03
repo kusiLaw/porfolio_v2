@@ -6,7 +6,7 @@ const Nav = ({isOpen, setOpen}) =>{
  return (
      <nav className={isOpen ? "absolute bg-inherit z-30 top-14 h-screen right-0 left-0 flex flex-col \
       items-center   px-5 pt-5 divide-y divide-light_accent dark:divide-dark_accent": 
-     "flex space-x-2 md:block"}>
+     "flex space-x-2 md:block  transition-all duration-500 animate-delay-500 animate-duration-[5000] animate-fade-left"}>
 
 
 
@@ -18,11 +18,11 @@ const Nav = ({isOpen, setOpen}) =>{
         ['Project', '#projects'],
         ['Contact', '#contact'],
       ].map(([title, url], index) => (
-        <Link key={index} href={url}  className={isOpen ? "w-full py-4 flex items-center hover:bg-light_accent_divider hover:dark:bg-dark_bg_secondary  spin_up " :
-        "px-3 py-2 font-medium hover:scale-150 duration-200" } onClick={()=>{ isOpen && setOpen(false)}}>
-                <span className='md:hidden xl:inline-block mr-3  text-light_accent_dark dark:text-dark_accent italic'> 0{index + 1}.</span> 
+        <Link key={index} href={url}  className={isOpen ? "w-full py-4 flex items-center hover:bg-light_accent_divider hover:dark:bg-dark_bg_secondary   transition-all duration-500 " :
+        "px-3 py-2 font-medium hover:animate-shake hover:animate-once" } onClick={()=>{ isOpen && setOpen(false)}}>
+                <span className='md:hidden xl:inline-block mr-3  text-light_accent_dark dark:text-dark_accent italic animate-Skew '> 0{index + 1}.</span> 
                 <span className='dark:text-dark_text_header text-xl  
-                                  hover:border-b-light_accent '>{title}</span>
+                                  hover:border-b-light_accent  hover:scale-[1.02] hover:animate-wiggle hover:animate-once'>{title}</span>
         </Link>
       ))}
 

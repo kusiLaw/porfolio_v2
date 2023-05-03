@@ -25,7 +25,7 @@ export default function Home({data}) {
    <Layout>
   
       <section id='presentation' className=' flex flex-col align-middle min-h-fit	text-lg pt-24 md:pt-40 pr-1 pl-1 '>
-         <div className='h-fit	 w-full	'>
+         <div className='h-fit	 w-full'>
              {/* border-solid border-2 border-red-200 */}
              <h1 className='leading-relaxed bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
                  <span className='block text-lg text-light_text_color'>Hi, my name is</span> 
@@ -48,7 +48,7 @@ export default function Home({data}) {
                     <Link href='#' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 border-dotted text-light_accent 
                     border-light_accent dark:border-dark_accent dark:text-dark_accent  dark:bg-transparent  
                     hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  
-                    hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent ' >
+                    hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent transition-all duration-300' >
                     Contact Me <span className='inline-block m-auto' > <FaLongArrowAltRight/> </span></Link>
              </div>
          </div>
@@ -78,7 +78,7 @@ export default function Home({data}) {
                 <Archive {...project} key={project.title}/> )) 
                 }
            </div>
-           { !viewAll && <div className='flex justify-end py-6 mr-1 text-light_accent dark:text-dark_accent'>
+           { !viewAll && <div className='flex justify-end py-6 mr-1 text-light_accent dark:text-dark_accent  '>
               <button className='hover:underline hover:underline-offset-[12px] border-collapse bg-inherit ' onClick={ () =>{
                  setViewAll(true)
               }

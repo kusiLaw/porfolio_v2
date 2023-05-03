@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <div className=' fixed  z-50 w-100 flex left-0 top-0 right-0 pt-3 pb-3 pl-3 pr-3 sm:pl-5 sm:pr-5 lg:pl-10 lg:pr-10
-            bg-light_bg dark:bg-dark_bg
+            bg-light_bg dark:bg-dark_bg  
     '>
        <div className='flex w-screen justify-between '>
              <div className='flex justify-center items-center  text-xl md:text-2xl font-medium  '>
@@ -58,7 +58,7 @@ const Header = () => {
              <Resume />
             </div>
             
-            <div className='text-2xl -rotate-45 transition-all duration-300 animate-mode'>{
+            <div className='text-2xl -rotate-45 transition-all duration-300'>{
                darkMode === true ? 
                <BsFillBrightnessHighFill onClick={handel_darkMode}  /> : 
 

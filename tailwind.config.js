@@ -60,9 +60,14 @@ module.exports = {
        'from': {transform: 'rotate(0deg)'},
        "to" : {transform: 'rotate(360deg)'}
      },
+     skew45: {
+      'from': {transform : 'skewY(45deg) '},
+      "to" : {transform: 'skewY(0deg) '}
+    }
+    ,
      up_down: {
-      'from': {margin : '-100% '},
-      "to" : {margin: '0%'}
+      'from': {margin : '-1rem '},
+      "to" : {margin: '0rem'}
     }
      },
 
@@ -71,6 +76,8 @@ module.exports = {
         'name_animate' : 'bgSlide 3s linear infinite',
         'mode' : 'spin 3s linear ',
         'spin_up' : 'up_down 3s linear ',
+        'Skew' : 'skew45 1s linear ',
+        'ToDown' : 'up_down 4s linear '
       },
 
       backgroundImage: {
@@ -87,7 +94,9 @@ module.exports = {
      },
     },
   
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 
 // 'grad_light_project': "linear-gradient(to  top,#f3f6f9  75%,  rgba(255, 255, 255, 0.7) 98%)",
