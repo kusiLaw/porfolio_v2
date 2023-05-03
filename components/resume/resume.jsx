@@ -9,7 +9,7 @@ const Resume = ({isOpen}) => {
     hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent' : 
    
    'hidden xl:inline-block border-dotted border-4 \
-   border-light_accent dark:border-dark_accent py-1 px-3 dark:text-dark_accent \
+   border-light_accent text-light_accent dark:border-dark_accent py-1 px-3 dark:text-dark_accent \
    hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  \
     hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent'}>{isOpen ? "Get My Resume" : "Resume"}</Link>
   )

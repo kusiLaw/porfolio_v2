@@ -11,16 +11,19 @@
                     "type" : "Web Ful-Stack",
                     "year" : "2023"
                   },
+                 
                   {
-                     "img" : "/web.png",
-                     "text" : "",
-                     "title" : "Free Web Course",
-                     "tech_stack" : ["NextJS", "React", "Tailwind"],
-                     "source" : "",
-                     "live" : "",
-                     "type" : "Web, Ful-Stack",
-                     "year" : "2023"
-                  },
+                   "img" : "/budgetsee.png",
+                   "title" : "BudgiSEE",
+                   "text" : "BudgiSEE is a simple mobile web application for managing budgets and expenses. Users can create a new category base on budgets and add all expenses that belong to that category. Built with Ruby on Rails.",
+                   "tech_stack" : ["Ruby on Rails", "CSS", "Postgres Sql"],
+                   "source" : "https://github.com/kusiLaw/budget_app",
+                   "live" : "https://budgisee.onrender.com/",
+                   "type" : "Web Ful-Stack",
+                   "year" : "Jan, 2023"
+                 },
+
+
                   {
                     "img" : "/web.png",
                     "text" : "A simple course demo website that allows students to sign up for a course. It shows the details of the course including the lecturer, Course descriptions, and Course activities. Built with JavaScript.",
@@ -66,16 +69,7 @@
                         },
                      
 
-                       {
-                        "title" : "BudgiSEE",
-                        "text" : "BudgiSEE is a simple mobile web application for managing budgets and expenses. Users can create a new category base on budgets and add all expenses that belong to that category. Built with Ruby on Rails.",
-                        "main_tech" : "Rails",
-                        "tech_stacks" : ["Ruby on Rails", "CSS", "Postgres Sql"],
-                        "source" : "https://github.com/kusiLaw/budget_app",
-                        "live" : "",
-                        "type" : "Web Ful-Stack",
-                        "year" : "Jan, 2023"
-                      },
+                     
                       {
                        "title" : "Book Store",
                        "text" : "Book Store is a simple Single Page App (SPA) that allows users to make add,remove, and update books with respective author. Built with react .",
@@ -108,17 +102,7 @@
                       "type" : "Web Ful-Stack",
                       "year" : "Jan, 2022"
                     }
-                    ,
-                    {
-                     "title" : "Leaderboard",
-                     "text" : "BudgiSEE is a simple mobile web application for managing budgets and expenses. Users can create a new category base on budgets and add all expenses that belong to that category. Built with Ruby on Rails.",
-                     "main_tech" : "JavaScript",
-                     "tech_stacks" : ["JavaScript", "CSS", "Webpack",  "HTML"],
-                     "source" : "https://github.com/kusiLaw/leaderboard",
-                     "live" : "",
-                     "type" : "Web Ful-Stack",
-                     "year" : "Jan, 2022"
-                   }
+                    
                   ],
     "experience" : [
                  {

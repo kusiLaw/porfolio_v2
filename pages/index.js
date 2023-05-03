@@ -45,7 +45,7 @@ export default function Home({data}) {
                 If you like what you see and need help on a project, I am available for hire. 
              </p>
              <div className='mt-16 mb-6 w-full'>
-                    <Link href='#' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 border-dotted text-light_accent 
+                    <Link href='#contact' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 border-dotted text-light_accent 
                     border-light_accent dark:border-dark_accent dark:text-dark_accent  dark:bg-transparent  
                     hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  
                     hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent transition-all duration-300' >
@@ -123,9 +123,6 @@ export default function Home({data}) {
                   </div>
               </div>
               {/* grid-cols-1  phone:grid-cols-2 mdx:gride-cols-4 */}
-             
-
-              
              
           </div>
        </section>
