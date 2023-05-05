@@ -115,8 +115,8 @@ export default function Home({data}) {
                   <div className='flex  flex-wrap gap-8'>
                      
                      {experience.map(exp =>(
-                      <div className=''>
-                          <Experience {...exp} key={exp.cat}/>
+                      <div className=''  key={exp.cat}>
+                          <Experience {...exp}/>
                       </div>
                      ))}
 
