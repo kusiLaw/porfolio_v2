@@ -97,10 +97,10 @@ export default function Home({data}) {
               <div className=''>
                    <p>Hello! My name is Lawrence Addai Kusi. I’m a Full-Stack Software Developer from Ghana. 
                        I have a great passion for UI creation, effects, animation, and dynamic user experiences. 
-                       I'm interested in working on ambitious projects with positive people and goal-oriented companies. 
+                       I{`'`}m interested in working on ambitious projects with positive people and goal-oriented companies. 
                    </p>
                    <p>
-                        I fully immersed myself in the software development world. Since May 2022, I've been building my technical, leadership, 
+                        I fully immersed myself in the software development world. Since May 2022, I{`'`}ve been building my technical, leadership, 
                         and collaborative skills at 
                         <Link href={'https://www.microverse.org/'} className='dark:text-dark_accent text-light_accent inline-block px-2 '>Microverse</Link> 
                         through collaboration and pair programming with other students from all over the world. 
@@ -108,7 +108,7 @@ export default function Home({data}) {
                    <p>
                        My goal as a Software Developer is to continually improve my programming skills,
                         and create high-quality software to present better solutions for individuals and 
-                        businesses. I enjoy uncovering new ideas and would use them to advance my employers' mission to deliver the best tech experiences. 
+                        businesses. I enjoy uncovering new ideas and would use them to advance my employers{`'`} mission to deliver the best tech experiences. 
                    </p>
               </div>
               <div className=''>
@@ -116,7 +116,7 @@ export default function Home({data}) {
                      
                      {experience.map(exp =>(
                       <div className=''>
-                          <Experience {...exp} key={exp.title}/>
+                          <Experience {...exp} key={exp.cat}/>
                       </div>
                      ))}
 
