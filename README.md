@@ -27,7 +27,13 @@
 
 # 📖 Portfolio V2   <a name="about-project"></a>
 
-> This is my portfolio web project. It allows developers to present their personal projects. The project has different sections which include self-presentation, projects, about, and contact us form. Built using NextJS.
+> This is my portfolio web project. It allows developers to present their personal projects. The project has different sections which include self-presentation, projects, about, and contact us form. It has built-in support for light and dark mode. Built using NextJS.
+### Light Mode
+![Screenshot from 2023-05-05 15-00-41](https://user-images.githubusercontent.com/52538840/236505672-79f5feaf-17d6-416f-970b-9ec9e5525833.png)
+
+### Dark Mode
+![Screenshot from 2023-05-05 14-54-06](https://user-images.githubusercontent.com/52538840/236506003-350fe56a-cb97-469b-8532-4db149ae4a32.png)
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -37,12 +43,13 @@
 <details>
   <summary>Language</summary>
   <ul>
-    <li><a href="https://www.ruby-lang.org/en/">NextJS</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">JavaScript</a></li>
   </ul>
 </details>
 <details>
   <summary>Framwork</summary>
   <ul>
+    <li><a href="https://rubyonrails.org/">NextJS</a></li>
     <li><a href="https://rubyonrails.org/">React</a></li>
   </ul>
 </details>
