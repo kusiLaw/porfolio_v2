@@ -49,15 +49,16 @@
 <details>
   <summary>Framwork</summary>
   <ul>
-    <li><a href="https://rubyonrails.org/">NextJS</a></li>
-    <li><a href="https://rubyonrails.org/">React</a></li>
+    <li><a href="https://nextjs.org/">NextJS</a></li>
+    <li><a href="https://react.dev/">React</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwin CSS</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://rubyonrails.org/">Tailwin CSS</a></li>
+    <li><a href="https://nodejs.org/en/docs/guides/getting-started-guide">Node Sever</a></li>
   </ul>
 </details>
 
@@ -92,14 +93,10 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
 > Add a link to your deployed project.
 
-- [Live Demo Link]( https://budgisee.onrender.com/) 
+- [Live Link]( https://porfolio-v2-sf9s.vercel.app/) 
   
-- [Live Video Presentation Link]( https://www.loom.com/share/30ee108b25fa493db79e342b2ee9f8cd)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
