@@ -9,25 +9,37 @@ import SocialIcons from '../social/social_icons';
 import Resume from '../resume/resume';
 
 const Header = () => {
-  const [darkMode, setDarkMode] = useState('')
+  const [darkMode, setDarkMode] = useState()
   const [isOpen, setOpen] = useState(false)
-  console.log(isOpen)
-  
+
   const handel_darkMode = () =>{
-      // let toggle  = mode === 'light' ? 'dark' : 'light'
-      console.log(isOpen)
-      localStorage.setItem('mode', !darkMode);
+      // localStorage.setItem('darkMode', !darkMode);
       setDarkMode(!darkMode)
   }
 
   useEffect(()=>{
-   // setMode(localStorage.getItem('mode') || 'light');
-   if(darkMode === ''){
-    setDarkMode(localStorage.getItem('mode' || false))
-   }else{
-    localStorage.getItem(!darkMode)
-    window.document.documentElement.classList.toggle('dark')
+    setDarkMode(localStorage.getItem('darkMode') === 'true')
+    // console.log('run fisrt ')
+  },[])
+
+
+  useEffect(()=>{
+   // let g = localStorage.getItem('darkMode') === 'true'
+   console.log(darkMode, 'second')
+
+   if(darkMode){
+      localStorage.setItem('darkMode', true);
+      window.document.documentElement.classList.add('dark')
+   }else if(darkMode === false){
+      localStorage.setItem('darkMode', false);
+      window.document.documentElement.classList.remove('dark')
    }
+   // else{
+   //  console.log(darkMode, "first call")
+   //   setDarkMode(localStorage.getItem('darkMode') === 'true')
+   //   // console.log(localStorage.getItem('darkMode') || "no there fsl")
+ 
+   // }
 
   },[darkMode])
 

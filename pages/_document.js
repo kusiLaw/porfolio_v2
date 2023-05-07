@@ -1,8 +1,9 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import { Mode } from '@/utilities/darkmode'
 
-export default function Document() {
 
+export default function Document() {
+ 
   return (
     <Html lang="en" >
       <Head />
