@@ -12,6 +12,7 @@ const Header = () => {
   const [darkMode, setDarkMode] = useState('')
   const [isOpen, setOpen] = useState(false)
   console.log(isOpen)
+  
   const handel_darkMode = () =>{
       // let toggle  = mode === 'light' ? 'dark' : 'light'
       console.log(isOpen)

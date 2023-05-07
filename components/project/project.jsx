@@ -13,6 +13,7 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
            <div className= 'relative w-100 h-64 overflow-hidden  shadow-lg mdx:shadow-2xl mdx:w-3/6 	' >
 
               <Image src={img} 
+              alt={title}
               placeholder="blur" 
               blurDataURL={img}
               fill
@@ -65,10 +66,10 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
 
                 <div className= { order === 0 ? "flex justify-end  self-end text-2xl gap-4 p-3 mdx:p-2 font-bold " :
                                                 "flex justify-end  self-end text-2xl gap-4 p-3 mdx:p-2 mdx:justify-start font-bold"} >
-                    <Link href={source} className="hover:dark:text-dark_accent hover:scale-110 duration-200">
+                    <Link href={source} className="hover:dark:text-dark_accent hover:scale-110 duration-200" target="blank">
                        <AiFillGithub />
                     </Link>
-                   <Link href={live} className="hover:dark:text-dark_accent hover:scale-110 duration-200">
+                   <Link href={live} className="hover:dark:text-dark_accent hover:scale-110 duration-200" target="blank">
                       <MdOpenInNew />
                    </Link>
                 </div>
