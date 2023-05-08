@@ -54,7 +54,7 @@ const Header = () => {
             
             <div className='text-2xl -rotate-45 transition-all duration-300'>{
              theme === 'light' ? 
-                <MdNightlight onClick={() => setTheme('dark' )} />
+                <MdNightlight  onClick={() => setTheme('dark' )} />
                : 
                 <BsFillBrightnessHighFill onClick={() => setTheme('light')}  /> 
 
