@@ -2,26 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+
+
+.about-bg{
+
+ /* background-image: url(../public/pattern-quotes.svg); */
+ background-size: 3rem auto;
+ background-position: right 0rem top 3.5rem;
+ background-image: green;
+ /* background-position: right 0px bottom 0px; */
+ background-repeat:  no-repeat;
+ padding: 1rem;
+ max-width: 1440px;
+ background-color: rgba(243, 246, 249, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/*sm-color #f3f6f9  83%,  rgba(243, 246, 249, 0.1) */

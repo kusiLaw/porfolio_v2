@@ -1,124 +1,158 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Layout from '@/components/layout/layout'
+import Link from 'next/link'
+import { Title, SubTile } from '@/components/title/title'
+import Project from '@/components/project/project'
+import Archive from '@/components/archive/archive'
+
+import { FaLongArrowAltRight} from "react-icons/fa"
+import ContactForm from '@/components/form/form'
+import Experience from '@/components/experince_list/experience'
+
+
+import loadData from '@/lib/load_data'
+import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({data}) {
+  const {experience = [] ,projects = [],  extra_projects = []} = data
+  const [viewAll, setViewAll] = useState(false)
+
+
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+   <Layout>
+  
+      <section id='presentation' className=' flex flex-col align-middle min-h-fit	text-lg pt-24 md:pt-40 pr-1 pl-1 '>
+         <div className='h-fit	 w-full'>
+             {/* border-solid border-2 border-red-200 */}
+             <h1 className='leading-relaxed bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
+                 <span className='block text-lg text-light_text_color'>Hi, my name is</span> 
+                 <span className=' block text-name_font text-transparent  '>Lawrence Addai Kusi.</span>
+             </h1>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+             <p className='block text-2xl sm:tracking-wider	mt-3 mb-3 text-light_text_header 
+              dark:text-dark_text_header font-semibold'> 
+                {'>'} Full-Stack Developer 
+             </p>
+             
+             <p className=' text-light_text_color    
+             dark:text-dark_text_color leading-relaxed md:w-80 mt-20 phone:mt-6 mb-6 text-xl'>
+                A developer with a great passion for UI creation, effects, animation, and dynamic user experiences. 
+                Devoted to developing customized software to meet organizational needs, 
+                highlight their core competencies, and further their success. Look through some of my work and experience! 
+                If you like what you see and need help on a project, I am available for hire. 
+             </p>
+             <div className='mt-16 mb-6 w-full'>
+                    <Link href='#contact' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 border-dotted text-light_accent 
+                    border-light_accent dark:border-dark_accent dark:text-dark_accent  dark:bg-transparent  
+                    hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  
+                    hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent transition-all duration-300' >
+                    Contact Me <span className='inline-block m-auto' > <FaLongArrowAltRight/> </span></Link>
+             </div>
+         </div>
+      </section>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section  id='projects' className='mt-20 md:mt-28'>
+           <div className='mb-10 pr-2 pl-2 '>
+               <Title text={'Projects'}/>
+           </div>
+           <div className='flex flex-col gap-[5rem] lg:gap-[110px] items-center '>
+       
+               {projects.map((project, index) =>(
+                <Project {...project}  order={index % 2 }  key={project.title}/> 
+               ))}
+           </div>
+      </section>
+       
+       <section id='extra_projects' className='mt-20 md:mb-28 pr-2 pl-2 '>
+           <div className='mb-10'>
+               <Title text={'More Projects'}/>
+           </div>
+           <div className='grid md:grid-cols-2 xl:grid-cols-2 gap-4 xl:gap-6 content-start'>
+              { viewAll ? extra_projects.map((project) =>(
+                <Archive {...project} key={project.title}/> )) :
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+                extra_projects.slice(0,4).map((project) =>(
+                <Archive {...project} key={project.title}/> )) 
+                }
+           </div>
+           { !viewAll && <div className='flex justify-end py-6 mr-1 text-light_accent dark:text-dark_accent  '>
+              <button className='hover:underline hover:underline-offset-[12px] border-collapse bg-inherit ' onClick={ () =>{
+                 setViewAll(true)
+              }
+              
+              }>View all</button>
+           </div>}
+       </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+       {/* bg-[url("../public/pattern-quotes.svg")] */}
+       <section id='about' className='mt-20 md:mt-28 pr-2 pl-2 
+       '>
+          <div className='py-10'>
+             <Title text={'About Me'} />
+          </div>
+          <div className='flex flex-col gap-3 flex-wrap '>
+              <div className=''>
+                   <p>Hello! My name is Lawrence Addai Kusi. I’m a Full-Stack Software Developer from Ghana. 
+                       I have a great passion for UI creation, effects, animation, and dynamic user experiences. 
+                       I{`'`}m interested in working on ambitious projects with positive people and goal-oriented companies. 
+                   </p>
+                   <p>
+                        I fully immersed myself in the software development world. Since May 2022, I{`'`}ve been building my technical, leadership, 
+                        and collaborative skills at 
+                        <Link href={'https://www.microverse.org/'} className='dark:text-dark_accent text-light_accent inline-block px-2 '>Microverse</Link> 
+                        through collaboration and pair programming with other students from all over the world. 
+                   </p>
+                   <p>
+                       My goal as a Software Developer is to continually improve my programming skills,
+                        and create high-quality software to present better solutions for individuals and 
+                        businesses. I enjoy uncovering new ideas and would use them to advance my employers{`'`} mission to deliver the best tech experiences. 
+                   </p>
+              </div>
+              <div className=''>
+                  <div className='flex  flex-wrap gap-8'>
+                     
+                     {experience.map(exp =>(
+                      <div className=''  key={exp.cat}>
+                          <Experience {...exp}/>
+                      </div>
+                     ))}
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`${inter.className} mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p
-            className={`${inter.className} m-0 max-w-[30ch] text-sm opacity-50`}
-          >
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+                  </div>
+              </div>
+              {/* grid-cols-1  phone:grid-cols-2 mdx:gride-cols-4 */}
+             
+          </div>
+       </section>
+
+
+       <section id='contact'  className='mt-20 md:mt-28 flex flex-col bg-inherit  justify-center shadow-md 
+                          dark:bg-dark_bg_secondary xl:bg-light_grad_form xl:dark:bg-grad_form xl:border-solid xl:border-[0.5px] xl:dark:border-dark_accent'>  
+           <div className=' flex flex-col gap-5  
+                          xl:flex-row xl:gap-[0px] xl:bg-transparent
+                         '>
+             <div className='flex flex-col gap-4 px-3 pt-8 xl:w-[50%]  '>
+                 <Title text={'Contact Me'} />
+                <p> Your feedback is important to Me. </p>
+                <p>If you have an application you are interested in developing, a feature that you need to build, or a project that needs coding. I’d love to help with it.</p> 
+             </div>
+             <div className='form_wrapper  pt-5 px-3 xl:pt-10 xl:w-[50%] xl:pl-10 xl:pr-4   '>
+                <ContactForm />
+             </div>
+           </div>
+       </section>
+        
+ 
+   </Layout>
   )
+}
+
+
+export async function getStaticProps(context) {
+ const data = loadData()
+ return {
+   props: {data}, // will be passed to the page component as props
+ }
 }
