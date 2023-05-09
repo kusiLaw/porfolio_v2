@@ -102,7 +102,7 @@ export default function Home({data}) {
                    <p>
                         I fully immersed myself in the software development world. Since May 2022, I{`'`}ve been building my technical, leadership, 
                         and collaborative skills at 
-                        <Link href={'https://www.microverse.org/'} className='dark:text-dark_accent text-light_accent inline-block px-2 '>Microverse</Link> 
+                        <Link href={'https://www.microverse.org/'} target='_blank' className='dark:text-dark_accent text-light_accent inline-block px-2 '>Microverse</Link> 
                         through collaboration and pair programming with other students from all over the world. 
                    </p>
                    <p>

@@ -20,7 +20,7 @@ export default function Layout({ children }) {
          {/* </div> */}
          
          <Aside />
-         <main className='w-90 lg:w-80 2xl:w-9/12 max-w-screen-2xl '>
+         <main className='w-90 lg:w-[85%] xl:w-[80%] 2xl:w-[75%] 2xl:text-md max-w-screen-2xl '>
            {children}
          </main>
          <Footer />
