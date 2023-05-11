@@ -77,29 +77,8 @@
                         "live" : "",
                         "type" : "Web, Front-End",
                         "year" : "Sept, 2022"
-                      },
+                      }
 
-                      {
-                       "title" : "Space Travelers' Hub",
-                       "text" : "The Space Travelers' Hub consists of Rockets, Missions, and the My Profile section. The Rockets section displays a list of all available SpaceX rockets. Users can book each rocket by clicking the reservation button or cancel the previously made booking. Built with React",
-                       "main_tech" : "React",
-                       "tech_stacks" : ["React", "Redux", "CSS"],
-                       "source" : "https://github.com/kusiLaw/Space_Travelers_Hub",
-                       "live" : "",
-                       "type" : "Web, Front-End",
-                       "year" : "Oct, 2023"
-                     },
-
-                      {
-                      "title" : "Math magician",
-                      "text" : "Math magician is a simple Single Page App (SPA) that allows users to make simple calculations and read random math-related quotes. ",
-                      "main_tech" : "React",
-                      "tech_stacks" : ["React", "JavaScript", "CSS"],
-                      "source" : "https://github.com/kusiLaw/math_magicians",
-                      "live" : "",
-                      "type" : "Web Front-end",
-                      "year" : "Sep, 2022"
-                    }
                     
                   ],
     "experience" : [
