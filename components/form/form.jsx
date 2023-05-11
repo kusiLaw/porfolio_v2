@@ -66,7 +66,8 @@ const handleForm = (e) =>{
                                            }
                                     className='w-full py-2 px-1 rounded-sm text-inherit border-collapse valid:border-2 valid:border-light_accent valid:dark:border-dark_accent 
                                      dark:bg-dark_text_header dark:text-dark_bg bg-light_accent_divider 
-                                     focus:border-2 focus:border-light_accent dark:focus:border-dark_accent' />
+                                     focus:outline focus:outline-light_accent dark:focus:outline-dark_accent'
+                                      />
                            </div>
                         </div>
                          <div className='form_email md:w-full'>
@@ -77,7 +78,7 @@ const handleForm = (e) =>{
                                              value={email} onChange={e => setEmail(e.target.value.replace(/\s+/g, ' ')) }
                                       className='w-full py-2 px-1 rounded-sm text-inherit border-collapse valid:border-2  valid:border-light_accent valid:dark:border-dark_accent 
                                        dark:bg-dark_text_header dark:text-dark_bg bg-light_accent_divider 
-                                       focus:border-2 focus:border-light_accent dark:focus:border-dark_accent' />
+                                       focus:outline focus:outline-light_accent dark:focus:outline-dark_accent' />
                              </div>
                          </div>
                      </div>
@@ -92,7 +93,7 @@ const handleForm = (e) =>{
                                    pattern='\w+\s*' title='Invalid format'
                                    value={massage} onChange={e => setMassage(e.target.value) }
                          className='w-full py-2 px-2 text-inherit dark:bg-dark_text_header dark:text-dark_bg  resize-none 	border-collapse valid:border-2  valid:border-light_accent valid:dark:border-dark_accent
-                         bg-light_accent_divider focus:border-0 focus:border-light_accent dark:focus:border-dark_accent' />
+                         bg-light_accent_divider focus:outline focus:outline-light_accent dark:focus:outline-dark_accent' />
                          
                       </div>
                    </div>
