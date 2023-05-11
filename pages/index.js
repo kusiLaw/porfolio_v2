@@ -74,7 +74,7 @@ export default function Home({data}) {
               { viewAll ? extra_projects.map((project) =>(
                 <Archive {...project} key={project.title}/> )) :
 
-                extra_projects.slice(0,4).map((project) =>(
+                extra_projects.slice(0,2).map((project) =>(
                 <Archive {...project} key={project.title}/> )) 
                 }
            </div>

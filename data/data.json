@@ -5,11 +5,11 @@
                     "img" : "/laky_web.png",
                     "text" : "LakyPos-Web is a website built for LakyPos software which is a newer version of lakyPhonePOS. LakyPos software is a Point Of Sale app used to manage wholesale or retail shops.",
                     "title" : "Laky-P.O.S",
-                    "tech_stack" : ["NextJS", "React", "Tailwind", "Ruby on Rials"],
+                    "tech_stack" : ["NextJS", "React", "CSS", "Ruby on Rials"],
                     "source" : "https://github.com/kusiLaw/lakypos_web",
                     "live" : "https://lakypos-web.vercel.app/",
-                    "type" : "Web Ful-Stack",
-                    "year" : "2023"
+                    "type" : "Web, Full-Stack",
+                    "year" : "Mar, 2023"
                   },
                  
                   {
@@ -19,7 +19,7 @@
                    "tech_stack" : ["Ruby on Rails", "CSS", "Postgres Sql"],
                    "source" : "https://github.com/kusiLaw/budget_app",
                    "live" : "https://budgisee.onrender.com/",
-                   "type" : "Web Ful-Stack",
+                   "type" : "Web, Full-Stack",
                    "year" : "Jan, 2023"
                  },
 
@@ -31,7 +31,7 @@
                     "tech_stack" : ["JavaScript", "HTML", "CSS"],
                     "source" : "https://github.com/kusiLaw/web-dev-course",
                     "live" : "https://kusilaw.github.io/web-dev-course/",
-                    "type" : "Web, Front-end",
+                    "type" : "Web, Front-End",
                     "year" : "Aug, 2022"
                   },
                   {
@@ -52,9 +52,9 @@
                            "text" : "This is a Point-Of-Sales desktop app built specifically for managing mobile phone retail shops. It is a robust, scalable, and powerful app with a modern design (Dracula theme). The newer version of this app(LakyPos) is general-purpose and can be used in almost all settings.  Built with Python, PySide, and CSS.",
                            "main_tech" : "Python",
                            "tech_stacks" : ["Python", "PySide", "MySql", "Numpy", "Pandas"],
-                           "source" : "https://github.com/kusiLaw/To-Do-List",
-                           "live" : "https://kusilaw.github.io/To-Do-List/",
-                           "type" : "Desktop, Front-end",
+                           "source" : "https://github.com/kusiLaw/laky-phone-POS",
+                           "live" : "",
+                           "type" : "Desktop, Full-Stack",
                            "year" : "Sept, 2021"
                          },
                          {
@@ -64,22 +64,20 @@
                           "tech_stacks" : ["JavaScript", "HTML", "CSS"],
                           "source" : "https://github.com/kusiLaw/To-Do-List",
                           "live" : "https://kusilaw.github.io/To-Do-List/",
-                          "type" : "Web, Front-end",
+                          "type" : "Web, Front-End",
                           "year" : "Aug, 2022"
                         },
-                     
-
-                     
-                      {
-                       "title" : "Book Store",
-                       "text" : "Book Store is a simple Single Page App (SPA) that allows users to make add,remove, and update books with respective author. Built with react .",
-                       "main_tech" : "React",
-                       "tech_stacks" : ["JavaScript", "React", "Redux",  "CSS"],
-                       "source" : "https://github.com/kusiLaw/book_store",
-                       "live" : "",
-                       "type" : "Web Front-end",
-                       "year" : "Sept, 2022"
-                     },
+ 
+                       {
+                        "title" : "Book Store",
+                        "text" : "Book Store is a simple Single Page App (SPA) that allows users to make add,remove, and update books with respective author. Built with react .",
+                        "main_tech" : "React",
+                        "tech_stacks" : ["JavaScript", "React", "Redux",  "CSS"],
+                        "source" : "https://github.com/kusiLaw/book_store",
+                        "live" : "",
+                        "type" : "Web, Front-End",
+                        "year" : "Sept, 2022"
+                      },
 
                       {
                        "title" : "Space Travelers' Hub",
@@ -88,7 +86,7 @@
                        "tech_stacks" : ["React", "Redux", "CSS"],
                        "source" : "https://github.com/kusiLaw/Space_Travelers_Hub",
                        "live" : "",
-                       "type" : "Web Front-end",
+                       "type" : "Web, Front-End",
                        "year" : "Oct, 2023"
                      },
 
@@ -98,7 +96,7 @@
                       "main_tech" : "React",
                       "tech_stacks" : ["React", "JavaScript", "CSS"],
                       "source" : "https://github.com/kusiLaw/math_magicians",
-                      "live" : "#",
+                      "live" : "",
                       "type" : "Web Front-end",
                       "year" : "Sep, 2022"
                     }
