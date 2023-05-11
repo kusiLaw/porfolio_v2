@@ -10,8 +10,8 @@ import {DiJavascript1} from "react-icons/di"
 import { SubTile } from '../title/title';
 
 
-const Archive = ({text, title, main_tech, type="", year="", live = "", source ="", tech_stacks = []}) => {
-  console.log(main_tech)
+const Archive = ({text, title, main_tech, type="", year="", live = "", source ="", tech_stacks = []} ) => {
+  
  const iconLibrary = {
     'JavaScript': () => (<DiJavascript1 />),
     'Python' : () => (<TbBrandPython />),
@@ -31,14 +31,15 @@ const Archive = ({text, title, main_tech, type="", year="", live = "", source ="
           <div className='text-4xl text-light_accent dark:text-dark_accent'>{iconLibrary[main_tech]? iconLibrary[main_tech](): <FiFolder/>}</div>
           <div className='flex gap-3 text-2xl'>
              <dev className=' hover:dark:text-dark_accent hover:scale-110 duration-200'> 
-                  <Link href={source} className='' target='blank'>
+                  <Link href={source} className='' target='_blank'>
                        <AiFillGithub />
                   </Link>
               </dev>
              <dev className=' hover:dark:text-dark_accent hover:scale-110 duration-200'>   
-                   <Link href={live} className=''  target='blank'>
+                 { live.length > 0 &&  <Link href={live} className=''  target='_blank'>
                       <MdOpenInNew />
                    </Link>
+                 }
               </dev>
           </div>
       </div>

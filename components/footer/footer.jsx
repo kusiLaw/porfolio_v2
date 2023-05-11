@@ -16,7 +16,7 @@ const Footer = () => {
         <div className='text-sm italic '>
           <p>
           Developer: 
-            <Link href={'https://www.linkedin.com/in/lawrence-addai-kusi/'} target='blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
+            <Link href={'https://www.linkedin.com/in/lawrence-addai-kusi/'} target='_blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
                {' '} Lawrence Addai Kusi. {' '}
             </Link>
             April 2023
@@ -26,13 +26,13 @@ const Footer = () => {
           <p>
           Built With: 
  
-             <Link href={'https://nextjs.org/'} target='blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
+             <Link href={'https://nextjs.org/'} target='_blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
                {' '} NextJS,
             </Link>
-            <Link href={'https://react.dev/'} target='blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
+            <Link href={'https://react.dev/'} target='_blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
                {' '} React,
             </Link>
-            <Link href={'https://tailwindcss.com/'} target='blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
+            <Link href={'https://tailwindcss.com/'} target='_blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
                {' '} TailwindCSS
             </Link>
           </p>
@@ -40,7 +40,7 @@ const Footer = () => {
         <div className='text-sm italic '>
         <p>
          Source Code : 
-          <Link href={'https://github.com/kusiLaw/porfolio_v2'} target='blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
+          <Link href={'https://github.com/kusiLaw/porfolio_v2'} target='_blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
              {' '} Github
           </Link>
         </p>

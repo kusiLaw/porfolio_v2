@@ -24,7 +24,7 @@ export default function Home({data}) {
   return (
    <Layout>
   
-      <section id='presentation' className=' flex flex-col align-middle min-h-fit	text-lg pt-24 md:pt-40 pr-1 pl-1 '>
+      <section id='presentation' className=' flex flex-col align-middle min-h-fit	text-lg pt-24 md:pt-40 pr-1 pl-1  '>
          <div className='h-fit	 w-full'>
              {/* border-solid border-2 border-red-200 */}
              <h1 className='leading-relaxed bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
@@ -54,8 +54,8 @@ export default function Home({data}) {
          </div>
       </section>
 
-      <section  id='projects' className='mt-20 md:mt-28'>
-           <div className='mb-10 pr-2 pl-2 '>
+      <section id='projects'  className='pt-20 md:pt-28'>
+           <div className='mb-16 pr-2 pl-2 ' >
                <Title text={'Projects'}/>
            </div>
            <div className='flex flex-col gap-[5rem] lg:gap-[110px] items-center '>
@@ -66,7 +66,7 @@ export default function Home({data}) {
            </div>
       </section>
        
-       <section id='extra_projects' className='mt-20 md:mb-28 pr-2 pl-2 '>
+       <section id='extra_projects' className='pt-20 md:pt-28 pr-2 pl-2 '>
            <div className='mb-10'>
                <Title text={'More Projects'}/>
            </div>
@@ -74,7 +74,7 @@ export default function Home({data}) {
               { viewAll ? extra_projects.map((project) =>(
                 <Archive {...project} key={project.title}/> )) :
 
-                extra_projects.slice(0,4).map((project) =>(
+                extra_projects.slice(0,2).map((project) =>(
                 <Archive {...project} key={project.title}/> )) 
                 }
            </div>
@@ -88,7 +88,7 @@ export default function Home({data}) {
        </section>
 
        {/* bg-[url("../public/pattern-quotes.svg")] */}
-       <section id='about' className='mt-20 md:mt-28 pr-2 pl-2 
+       <section id='about' className='pt-10 mt-10 md:mt-14 md:pt-14 pr-2 pl-2 
        '>
           <div className='py-10'>
              <Title text={'About Me'} />
@@ -102,7 +102,7 @@ export default function Home({data}) {
                    <p>
                         I fully immersed myself in the software development world. Since May 2022, I{`'`}ve been building my technical, leadership, 
                         and collaborative skills at 
-                        <Link href={'https://www.microverse.org/'} className='dark:text-dark_accent text-light_accent inline-block px-2 '>Microverse</Link> 
+                        <Link href={'https://www.microverse.org/'} target='_blank' className='dark:text-dark_accent text-light_accent inline-block px-2 '>Microverse</Link> 
                         through collaboration and pair programming with other students from all over the world. 
                    </p>
                    <p>
@@ -128,20 +128,25 @@ export default function Home({data}) {
        </section>
 
 
-       <section id='contact'  className='mt-20 md:mt-28 flex flex-col bg-inherit  justify-center shadow-md 
+       <section id='contact' className='mt-10 pt-10 md:pt-28' >
+           <div className=' flex flex-col bg-inherit  justify-center shadow-md 
                           dark:bg-dark_bg_secondary xl:bg-light_grad_form xl:dark:bg-grad_form xl:border-solid xl:border-[0.5px] xl:dark:border-dark_accent'>  
-           <div className=' flex flex-col gap-5  
-                          xl:flex-row xl:gap-[0px] xl:bg-transparent
-                         '>
-             <div className='flex flex-col gap-4 px-3 pt-8 xl:w-[50%]  '>
-                 <Title text={'Contact Me'} />
-                <p> Your feedback is important to Me. </p>
-                <p>If you have an application you are interested in developing, a feature that you need to build, or a project that needs coding. I’d love to help with it.</p> 
-             </div>
-             <div className='form_wrapper  pt-5 px-3 xl:pt-10 xl:w-[50%] xl:pl-10 xl:pr-4   '>
-                <ContactForm />
+
+             <div className=' flex flex-col gap-5  
+                            xl:flex-row xl:gap-[0px] xl:bg-transparent
+                           '>
+               <div className='flex flex-col gap-4 px-3 pt-8 xl:w-[50%]  '>
+                   <Title text={'Contact Me'} />
+                  <p> Your feedback is important to Me. </p>
+                  <p>If you have an application you are interested in developing, a feature that you need to build, or a project that needs coding. I’d love to help with it.</p> 
+               </div>
+               <div className='form_wrapper  pt-5 px-3 xl:pt-10 xl:w-[50%] xl:pl-10 xl:pr-4   '>
+                  <ContactForm />
+               </div>
              </div>
            </div>
+
+             
        </section>
         
  
