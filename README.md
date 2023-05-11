@@ -80,13 +80,14 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Splash screen
-- Sign up and log in pages
-- Home page (catagories page)
-- Transactions page
-- Add a new category
-- Add a new transaction
-- Create unit and integration tests
+-  Welcome section
+-  Projects
+-  Other Projects
+-  About Section
+-  Contact section
+-  Navigation
+-  Footer
+-  Color Theme
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -95,7 +96,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Link]( https://porfolio-v2-sf9s.vercel.app/) 
+- [Live Link](https://porfolio-v2-eta.vercel.app/)
   
 
 <!-- GETTING STARTED -->
@@ -148,7 +149,7 @@ To run the project, execute the following command:
 To run tests, run the following command:
 
 ```sh
-  bin/rspec spec
+  npm run test
 ```
 
 ### Deployment
