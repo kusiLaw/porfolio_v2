@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <div className=' fixed  z-50 w-100 flex left-0 top-0 right-0 py-4 px-3 sm:pl-5 sm:pr-5 lg:pl-10 lg:pr-10
-            bg-light_bg dark:bg-dark_bg border- border-amber-800
+            bg-light_bg dark:bg-dark_bg 
     '>
        <div className='flex w-screen justify-between '>
              <div className='flex justify-center items-center  text-xl md:text-2xl font-medium  '>
