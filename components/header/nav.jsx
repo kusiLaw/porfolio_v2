@@ -30,9 +30,9 @@ const Nav = ({isOpen, setOpen}) =>{
                  <SocialIcons />
        </div>}
 
-      {isOpen && <div className='flex justify-end self-end  w-fit'>
+      {/* {isOpen && <div className='flex justify-end self-end  w-fit'>
              <Resume isOpen />
-      </div>}
+      </div>} */}
       
      </nav>
  )
