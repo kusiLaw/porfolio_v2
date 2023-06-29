@@ -1,6 +1,18 @@
 {
 
     "projects" :[ 
+                   {
+                    "img" : "/dashboard.png",
+                    "text" : "Web app that gives users the ability to see relationships between different data sets, spot outliers, and track performance over time.",
+                    
+                    "title" : "Next Dashboard",
+                    "tech_stack" : ["NextJS", "React", "TailwindCSS", "Chart-2"],
+                    "source" : "https://github.com/kusiLaw/next_dashboard",
+                    "live" : "https://next-dashboard-px4y4l6ow-kusilaw.vercel.app/dashboard",
+                    "type" : "Web, Front-End",
+                    "year" : "June, 2023"
+                  },
+     
                   {
                     "img" : "/laky_web.png",
                     "text" : "LakyPos-Web is a website built for LakyPos software which is a newer version of lakyPhonePOS. LakyPos software is a Point Of Sale app used to manage wholesale or retail shops.",
@@ -11,19 +23,7 @@
                     "type" : "Web, Full-Stack",
                     "year" : "Mar, 2023"
                   },
-                 
-                  {
-                   "img" : "/budgetsee.png",
-                   "title" : "BudgiSEE",
-                   "text" : "BudgiSEE is a simple mobile web application for managing budgets and expenses. Users can create a new category base on budgets and add all expenses that belong to that category. Built with Ruby on Rails.",
-                   "tech_stack" : ["Ruby on Rails", "CSS", "Postgres Sql"],
-                   "source" : "https://github.com/kusiLaw/budget_app",
-                   "live" : "https://budgisee.onrender.com/",
-                   "type" : "Web, Full-Stack",
-                   "year" : "Jan, 2023"
-                 },
-
-
+    
                   {
                     "img" : "/web.png",
                     "text" : "A simple course demo website that allows students to sign up for a course. It shows the details of the course including the lecturer, Course descriptions, and Course activities. Built with JavaScript.",
@@ -41,7 +41,7 @@
                      "tech_stack" : ["JavaScript", "HTML", "CSS"],
                      "source" : "https://github.com/kusiLaw/portfolio",
                      "live" : "https://kusilaw.github.io/portfolio/",
-                     "type" : "Web, Front-end",
+                     "type" : "Web, Front-End",
                      "year" : "July, 2022"
                   }
               ],
