@@ -45,10 +45,14 @@ export default function Home({data}) {
                 If you like what you see and need help on a project, I am available for hire. 
              </p>
              <div className='mt-16 mb-6 w-full'>
-                    <Link href='#contact' className='flex gap-3 content-center w-fit p-3 rounded-lg border-4 border-dotted text-light_accent 
-                    border-light_accent dark:border-dark_accent dark:text-dark_accent  dark:bg-transparent  
-                    hover:text-white hover:border-bg-light_accent  hover:bg-light_accent  
-                    hover:dark:text-white hover:border-bg-dark_accent hover:dark:bg-dark_accent transition-all duration-300' >
+                    <Link href='#contact' className='flex gap-3 content-center w-fit p-3 rounded-lg  
+                    hover:drop-shadow-2xl hover:scale-105
+                    bg-light_accent text-white 
+                     dark:bg-dark_accent dark:text-white
+                     
+                       dark:bg-transparent  
+                     hover:border-bg-light_accent  
+                     hover:border-bg-dark_accent  transition-all duration-300' >
                     Contact Me <span className='inline-block m-auto' > <FaLongArrowAltRight/> </span></Link>
              </div>
          </div>
