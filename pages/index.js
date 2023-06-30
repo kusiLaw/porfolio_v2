@@ -60,7 +60,7 @@ export default function Home({data}) {
            <div className='mb-16 pr-2 pl-2 ' >
                <Title text={'Projects'}/>
            </div>
-           <div className='flex flex-col gap-[5rem] lg:gap-[110px] items-center '>
+           <div className='flex flex-col gap-[5rem] lg:gap-[200px] items-center '>
        
                {projects.map((project, index) =>(
                 <Project {...project}  order={index % 2 }  key={project.title}/> 

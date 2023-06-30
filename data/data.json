@@ -14,7 +14,7 @@
                   },
      
                   {
-                    "img" : "/laky_web.png",
+                    "img" : "/laky_web2.png",
                     "text" : "LakyPos-Web is a website built for LakyPos software which is a newer version of lakyPhonePOS. LakyPos software is a Point Of Sale app used to manage wholesale or retail shops.",
                     "title" : "Laky-P.O.S",
                     "tech_stack" : ["NextJS", "React", "CSS", "Ruby on Rials"],
