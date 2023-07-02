@@ -7,16 +7,11 @@
 
 
 .about-bg{
-
- /* background-image: url(../public/pattern-quotes.svg); */
  background-size: 3rem auto;
  background-position: right 0rem top 3.5rem;
  background-image: green;
- /* background-position: right 0px bottom 0px; */
  background-repeat:  no-repeat;
  padding: 1rem;
  max-width: 1440px;
  background-color: rgba(243, 246, 249, 0.1);
 }
-
-/*sm-color #f3f6f9  83%,  rgba(243, 246, 249, 0.1) */

@@ -24,11 +24,11 @@ export default function Home({data}) {
   return (
    <Layout>
   
-      <section id='presentation' className=' flex flex-col align-middle min-h-fit	text-lg pt-24 md:pt-40 pr-1 pl-1  '>
-         <div className='h-fit	 w-full'>
-             {/* border-solid border-2 border-red-200 */}
+      <section id='presentation' className='flex flex-col align-middle min-h-fit	text-lg pt-24
+       md:pt-40 pr-1 pl-1 overflow-x-hidden scrollbar-hide lg:h-[90vh]  lg:justify-center lg:pt-[70px] border-'>
+         <div className='h-fit	 w-full lg:h-[75%] lg:max-h-[824px] lg:flex lg:flex-col lg:justify-between border-'>
              <h1 className='leading-relaxed bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
-                 <span className='block text-lg text-light_text_color'>Hi, my name is</span> 
+                 <span className='block text-lg text-light_text_color md:mb-3'>Hi, my name is</span> 
                  <span className=' block text-name_font text-transparent  '>Lawrence Addai Kusi.</span>
              </h1>
 
@@ -38,7 +38,7 @@ export default function Home({data}) {
              </p>
              
              <p className=' text-light_text_color    
-             dark:text-dark_text_color leading-relaxed md:w-80 mt-20 phone:mt-6 mb-6 text-xl'>
+             dark:text-dark_text_color leading-relaxed md:w-80 mt-20 phone:mt-6 mb-6 text-xl mdx:text-2xl mdx:leading-loose'>
                 A developer with a great passion for UI creation, effects, animation, and dynamic user experiences. 
                 Devoted to developing customized software to meet organizational needs, 
                 highlight their core competencies, and further their success. Look through some of my work and experience! 
@@ -89,13 +89,12 @@ export default function Home({data}) {
            </div>}
        </section>
 
-       {/* bg-[url("../public/pattern-quotes.svg")] */}
        <section id='about' className='pt-10 mt-10 md:mt-14 md:pt-14 pr-2 pl-2 
        '>
           <div className='py-10'>
              <Title text={'About Me'} />
           </div>
-          <div className='flex flex-col gap-3 flex-wrap '>
+          <div className='flex flex-col gap-3 flex-wrap md:text-xl leading-loose'>
               <div className=''>
                    <p>Hello! My name is Lawrence Addai Kusi. I’m a Full-Stack Software Developer from Ghana. 
                        I have a great passion for UI creation, effects, animation, and dynamic user experiences. 
@@ -124,11 +123,10 @@ export default function Home({data}) {
 
                   </div>
               </div>
-              {/* grid-cols-1  phone:grid-cols-2 mdx:gride-cols-4 */}
+         
              
           </div>
        </section>
-
 
        <section id='contact' className='mt-10 pt-10 md:pt-28' >
            <div className=' flex flex-col bg-inherit  justify-center shadow-md 

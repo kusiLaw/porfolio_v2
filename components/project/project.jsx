@@ -6,7 +6,6 @@ import Link from "next/link";
 
 const Project = ({img,text, live, title, source,year, type, order = 1, tech_stack = []}) => {
   return (
-// border-solid border-2 border-red-200 
     <div className='flex flex-col min-w-[320px] w-full '>
         <div className={ order === 0 ? 'flex flex-col relative mdx:flex-row mdx:w-full' : 
                                        'flex flex-col relative mdx:flex-row-reverse mdx:w-full '}>
@@ -28,7 +27,6 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                  </Link>
            </div>
          
-           {/* // bg-white bg-grad_light_project  dark:bg-dark_bg_secondary */}
             <div className=' pt-6 mdx:pt-0 pb-2 mdx:pb-0  
                               
                               bg-grad_light_project
@@ -78,7 +76,7 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                    </Link>
                 </div>
             </div>
-            {/* <div className="h-60  mdx:hidden"></div> */}
+          
         </div>   
     </div>
   )

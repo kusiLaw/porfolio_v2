@@ -97,7 +97,6 @@ module.exports = {
   plugins: [
     require('tailwindcss-animated'),
     require('tailwindcss-dark-mode')(),
+    require('tailwind-scrollbar-hide')
   ],
 }
-
-// 'grad_light_project': "linear-gradient(to  top,#f3f6f9  75%,  rgba(255, 255, 255, 0.7) 98%)",
