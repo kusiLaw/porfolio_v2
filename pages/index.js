@@ -11,7 +11,7 @@ import Experience from '@/components/experince_list/experience'
 
 
 import loadData from '@/lib/load_data'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,14 +19,12 @@ export default function Home({data}) {
   const {experience = [] ,projects = [],  extra_projects = []} = data
   const [viewAll, setViewAll] = useState(false)
 
-
-
   return (
    <Layout>
   
       <section id='presentation' className='flex flex-col align-middle min-h-fit	text-lg pt-24
-       md:pt-40 pr-1 pl-1 overflow-x-hidden scrollbar-hide lg:h-[90vh]  lg:justify-center lg:pt-[70px] border-'>
-         <div className='h-fit	 w-full lg:h-[75%] lg:max-h-[824px] lg:flex lg:flex-col lg:justify-between border-'>
+       md:pt-40 pr-1 pl-1 overflow-x-hidden scrollbar-hide lg:h-[100vh]  lg:justify-center lg:pt-[70px] '>
+         <div className='h-fit	 w-full lg:max-h-[824px] lg:flex lg:flex-col lg:justify-between border-'>
              <h1 className='leading-relaxed bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
                  <span className='block text-lg text-light_text_color md:mb-3'>Hi, my name is</span> 
                  <span className=' block text-name_font text-transparent  '>Lawrence Addai Kusi.</span>
@@ -44,6 +42,7 @@ export default function Home({data}) {
                 highlight their core competencies, and further their success. Look through some of my work and experience! 
                 If you like what you see and need help on a project, I am available for hire. 
              </p>
+
              <div className='mt-16 mb-6 w-full'>
                     <Link href='#contact' className='flex gap-3 content-center w-fit p-3 rounded-lg  
                     hover:drop-shadow-2xl hover:scale-105
@@ -56,8 +55,8 @@ export default function Home({data}) {
          </div>
       </section>
 
-      <section id='projects'  className='pt-20 md:pt-28'>
-           <div className='mb-16 pr-2 pl-2 ' >
+      <section id='projects'  className='pt-20 md:pt-28 lg:pt-0 lg:mt-3'>
+           <div className='mb-16 pr-2 pl-2 md:mb-20 ' >
                <Title text={'Projects'}/>
            </div>
            <div className='flex flex-col gap-[5rem] lg:gap-[200px] items-center '>

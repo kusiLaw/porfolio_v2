@@ -10,7 +10,7 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
         <div className={ order === 0 ? 'flex flex-col relative mdx:flex-row mdx:w-full' : 
                                        'flex flex-col relative mdx:flex-row-reverse mdx:w-full '}>
 
-           <div className= {`relative w-100 h-[15rem] mdx:h-[17rem] lg:h-[20rem] xl:h-[22rem] overflow-hidden  drop-shadow-lg mdx:drop-shadow-2xl mdx:w-3/6 mdx:hover:scale-105 
+           <div className= {`relative w-100 h-[15rem] mdx:h-[17rem] lg:h-[20rem] overflow-hidden  drop-shadow-lg mdx:drop-shadow-2xl mdx:w-3/6 mdx:hover:scale-105 
                mdx:hover:shadow-xl ease-in-out duration-500 	`} >
                 <Link href={live}  target="_blank">
 
