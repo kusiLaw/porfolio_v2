@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='mb-5 mt-16 w-full p-10 text-lg flex justify-center'>
       <div className='flex flex-col gap-5 w-full items-center '>
-        <div className='flex'>
+        <div className='flex text-lg'>
           <p>Nice to meet you. &#129309;</p>
         </div>
         <div className='flex gap-5 text-light_text_header dark:text-dark_text_header'>
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className='text-sm italic '>
           <p>
-          Developer: 
+          Developer:
             <Link href={'https://www.linkedin.com/in/lawrence-addai-kusi/'} target='_blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
                {' '} Lawrence Addai Kusi. {' '}
             </Link>
@@ -24,8 +24,8 @@ const Footer = () => {
         </div>
         <div className='text-sm italic '>
           <p>
-          Built With: 
- 
+          Built With:
+
              <Link href={'https://nextjs.org/'} target='_blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
                {' '} NextJS,
             </Link>
@@ -39,15 +39,15 @@ const Footer = () => {
         </div>
         <div className='text-sm italic '>
         <p>
-         Source Code : 
+         Source Code :
           <Link href={'https://github.com/kusiLaw/porfolio_v2'} target='_blank' className='hover:text-light_accent hover:dark:text-dark_accent'>
              {' '} Github
           </Link>
         </p>
-        
+
         </div>
       </div>
-     
+
     </footer>
   )
 }
