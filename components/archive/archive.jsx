@@ -25,7 +25,7 @@ const Archive = ({text, title, main_tech, type="", year="", live = "", source ="
 
 
   return (
-    <div className='flex flex-col p-4 pt-8  shadow-md rounded-md bg-light_accent_divider dark:bg-dark_bg_secondary border-[0.2px]  border-light_text_header \
+    <div className='flex flex-col   p-4 pt-8  shadow-md rounded-md bg-light_accent_divider dark:bg-dark_bg_secondary border-[0.2px]  border-light_text_header \
       hover:border-light_accent hover:dark:border-dark_accent  hover:scale-[1.02] duration-500'>
       <div className='flex justify-between items-center mb-6'>
           <div className='text-4xl text-light_accent dark:text-dark_accent'>{iconLibrary[main_tech]? iconLibrary[main_tech](): <FiFolder/>}</div>
@@ -48,7 +48,7 @@ const Archive = ({text, title, main_tech, type="", year="", live = "", source ="
          <div className=   "text-light_accent dark:text-dark_accent flex justify-end pr-2 py-1  uppercase text-xs gap-4 italic">
                       {type} {" - "}  {year}
          </div>
-        <div className='mb-2'>{text}</div>
+        <div className='mb-2 md:text-xl'>{text}</div>
         <div className='flex justify-self-end gap-2 flex-wrap mt-2 mb-2 text-sm pt-2 text-light_accent dark:text-dark_accent'>
            {tech_stacks.map((el)=>(
             <span key={el}>{el}</span>)

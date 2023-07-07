@@ -6,12 +6,11 @@ import Link from "next/link";
 
 const Project = ({img,text, live, title, source,year, type, order = 1, tech_stack = []}) => {
   return (
-// border-solid border-2 border-red-200 
     <div className='flex flex-col min-w-[320px] w-full '>
         <div className={ order === 0 ? 'flex flex-col relative mdx:flex-row mdx:w-full' : 
                                        'flex flex-col relative mdx:flex-row-reverse mdx:w-full '}>
 
-           <div className= {`relative w-100 h-[15rem] mdx:h-[17rem] overflow-hidden  drop-shadow-lg mdx:drop-shadow-2xl mdx:w-3/6 mdx:hover:scale-105 
+           <div className= {`relative w-100 h-[15rem] mdx:h-[17rem] lg:h-[20rem] xl:h-[22rem] overflow-hidden  drop-shadow-lg mdx:drop-shadow-2xl mdx:w-3/6 mdx:hover:scale-105 
                mdx:hover:shadow-xl ease-in-out duration-500 	`} >
                 <Link href={live}  target="_blank">
 
@@ -28,7 +27,6 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                  </Link>
            </div>
          
-           {/* // bg-white bg-grad_light_project  dark:bg-dark_bg_secondary */}
             <div className=' pt-6 mdx:pt-0 pb-2 mdx:pb-0  
                               
                               bg-grad_light_project
@@ -52,9 +50,9 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                    {type} {" - "}  {year}
                 </div>
                 <div className={ order === 0 ? "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap   hover:border-light_accent hover:dark:border-dark_accent duration-500 \
-                mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-ml-28 mdx:shadow-sm  mdx:z-10 mdx:m-1  mdx:rounded-md " :
+                mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-ml-28 mdx:shadow-sm  mdx:z-10 mdx:m-1  mdx:rounded-md text-lg lg:text-xl" :
                 "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap   hover:border-light_accent hover:dark:border-dark_accent transition-all duration-500\
-                 mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-mr-28 mdx:shadow-sm  mdx:z-10 mdx:m-1 mdx:rounded-md"
+                 mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-mr-28 mdx:shadow-sm  mdx:z-10 mdx:m-1 mdx:rounded-md text-lg lg:text-xl"
                 }>
                    {text}
                 </div>
@@ -78,7 +76,7 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                    </Link>
                 </div>
             </div>
-            {/* <div className="h-60  mdx:hidden"></div> */}
+          
         </div>   
     </div>
   )
