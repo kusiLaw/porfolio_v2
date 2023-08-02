@@ -22,9 +22,9 @@ export default function Home({data}) {
   return (
    <Layout>
 
-      <section id='presentation' className='flex flex-col align-middle min-h-fit	text-lg pt-24
+      <section id='presentation' className='flex flex-col align-middle min-h-fit max-h-[1080px]	text-lg pt-24
        md:pt-40 pr-1 pl-1 overflow-x-hidden scrollbar-hide lg:h-[100vh]  lg:justify-center lg:pt-[70px] '>
-         <div className='h-fit	 w-full lg:max-h-[824px] lg:flex lg:flex-col lg:justify-between border-'>
+         <div className='h-fit	 w-full lg:max-h-[824px] lg:flex lg:flex-col lg:justify-between'>
              <h1 className='leading-relaxed bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
                  <span className='block text-lg text-light_text_color md:mb-3'>Hi, my name is</span>
                  <span className=' block text-name_font text-transparent  '>Lawrence Addai Kusi.</span>
