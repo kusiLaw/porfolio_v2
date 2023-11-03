@@ -21,19 +21,14 @@ const Nav = ({isOpen, setOpen}) =>{
         <Link key={index} href={url}  className={isOpen ? "w-full py-4 flex items-center hover:bg-light_accent_divider hover:dark:bg-dark_bg_secondary   transition-all duration-500 " :
         "px-3 py-2 font-medium hover:animate-shake hover:animate-once" } onClick={()=>{ isOpen && setOpen(false)}}>
                 <span className='md:hidden xl:inline-block mr-3  text-light_accent_dark dark:text-dark_accent italic animate-Skew '> 0{index + 1}.</span> 
-                <span className='dark:text-dark_text_header text-xl  
+                <span className='dark:text-dark_text_header text-lg  
                                   hover:border-b-light_accent transition-all duration-500  hover:md:text-light_accent hover:md:dark:text-dark_accent'>{title}</span>
         </Link>
       ))}
 
       {isOpen && <div className='flex pt-5 pb-5 items-center w-full justify-end gap-4 text-2xl '>
                  <SocialIcons />
-       </div>}
-
-      {/* {isOpen && <div className='flex justify-end self-end  w-fit'>
-             <Resume isOpen />
-      </div>} */}
-      
+       </div>}      
      </nav>
  )
 }
