@@ -23,24 +23,23 @@ export default function Home({data}) {
    <Layout>
 
       <section id='presentation' className='flex flex-col align-middle min-h-fit max-h-[1080px]	text-lg pt-24
-       md:pt-40 pr-1 pl-1 overflow-x-hidden scrollbar-hide lg:h-[100vh]  lg:justify-center lg:pt-[70px] '>
+       md:pt-40 pr-1 pl-1 overflow-x-hidden scrollbar-hide lg:h-[730px]  lg:justify-center lg:pt-[70px] '>
          <div className='h-fit	 w-full lg:max-h-[824px] lg:flex lg:flex-col lg:justify-between'>
-             <h1 className='leading-relaxed bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
+             <h1 className='leading-normal bg-clip-text bg-name_gradient dark:bg-name_dark_gradient '>
                  <span className='block text-lg text-light_text_color md:mb-3'>Hi, my name is</span>
-                 <span className=' block text-name_font text-transparent  '>Lawrence Addai Kusi.</span>
+                 <span className=' block text-name_font text-transparent '>Lawrence Addai Kusi.</span>
              </h1>
 
-             <p className='block text-2xl sm:tracking-wider	mt-3 mb-3 text-light_text_header
+             <p className='block text-xl sm:tracking-wider	mt-3 mb-3 text-light_text_header
               dark:text-dark_text_header font-semibold'>
                 {'>'} Full-Stack Developer
              </p>
 
              <p className=' text-light_text_color
-             dark:text-dark_text_color leading-relaxed md:w-80 mt-20 phone:mt-6 mb-6 text-xl mdx:text-2xl mdx:leading-loose'>
-                A developer with a great passion for UI creation, effects, animation, and dynamic user experiences.
-                Devoted to developing customized software to meet organizational needs,
-                highlight their core competencies, and further their success. Look through some of my work and experience!
-                If you like what you see and need help on a project, I am available for hire.
+             dark:text-dark_text_color leading-relaxed md:w-80 mt-20 phone:mt-6 mb-6 text-base mdx:text-lg mdx:leading-loose'>
+                A Developer with a proven track record in web application development. Eager to contribute innovative business solutions to global clients, 
+                I bring proficiency in React.js, JavaScript, Next.js, and Python.   I don't just code; I architect solutions that redefine user interactions. My commitment to excellence is complemented by strong communication and collaboration skills, making me not just a developer,
+                but a strategic partner ready to spearhead innovation and deliver exceptional results. Let's transform ideas into extraordinary digital realities together.
              </p>
 
              <div className='mt-12 mb-6 w-full'>
@@ -49,7 +48,7 @@ export default function Home({data}) {
                     bg-light_accent text-white dark:bg-dark_accent dark:text-white
 
                      hover:border-bg-light_accent
-                     hover:border-bg-dark_accent  transition-all duration-300' >
+                     hover:border-bg-dark_accent  transition-all duration-300 text-base' >
                     Contact Me <span className='inline-block m-auto' > <FaLongArrowAltRight/> </span></Link>
              </div>
          </div>
