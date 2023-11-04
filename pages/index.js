@@ -92,7 +92,7 @@ export default function Home({data}) {
           <div className='py-10'>
              <Title text={'About Me'} />
           </div>
-          <div className='flex flex-col gap-3 flex-wrap md:text-xl leading-loose'>
+          <div className='flex flex-col gap-3 flex-wrap text-base md:text-lg leading-loose'>
               <div className=''>
                    <p>Hello! My name is Lawrence Addai Kusi. I’m a Full-Stack Software Developer from Ghana.
                        I have a great passion for UI creation, effects, animation, and dynamic user experiences.
@@ -136,7 +136,7 @@ export default function Home({data}) {
                <div className='flex flex-col gap-4 px-3 pt-8 xl:w-[50%]  '>
                    <Title text={'Contact Me'} />
                   <p className='text-lg'> Your feedback is important to Me. </p>
-                  <p className='text-lg'>If you have an application you are interested in developing, a feature that you need to build, or a project that needs coding. I’d love to help with it.</p>
+                  <p className='text-base'>If you have an application you are interested in developing, a feature that you need to build, or a project that needs coding. I’d love to help with it.</p>
                </div>
                <div className='form_wrapper  pt-5 px-3 xl:pt-10 xl:w-[50%] xl:pl-10 xl:pr-4   '>
                   <ContactForm />

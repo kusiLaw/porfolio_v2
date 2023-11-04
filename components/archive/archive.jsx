@@ -48,7 +48,7 @@ const Archive = ({text, title, main_tech, type="", year="", live = "", source ="
          <div className=   "text-light_accent dark:text-dark_accent flex justify-end pr-2 py-1  uppercase text-xs gap-4 italic">
                       {type} {" - "}  {year}
          </div>
-        <div className='mb-2 md:text-xl'>{text}</div>
+        <div className='mb-2 md:text-base'>{text}</div>
         <div className='flex justify-self-end gap-2 flex-wrap mt-2 mb-2 text-sm pt-2 text-light_accent dark:text-dark_accent'>
            {tech_stacks.map((el)=>(
             <span key={el}>{el}</span>)
