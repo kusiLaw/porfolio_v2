@@ -59,7 +59,7 @@ const handleForm = (e) =>{
                                      xl:gap-4 '>
                         <div className='form_name md:w-full'>
                            <div className='relative text-light_text_color dark:text-dark_text_color'>
-                                    <label htmlFor='name' className=' py-4   pointer-events-none'>Name *</label>
+                                    <label htmlFor='name' className=' py-4   pointer-events-none text-base'>Name *</label>
                                     <input type='text'  required name='name' id='name' minLength='2' maxLength='45'  placeholder='Full Name'
                                        pattern='[A-Za-z\s*]+{1,45}' title='Invalid name format'
                                            value={name} onChange={e => setName(e.target.value.replace(/\s+/g, ' ')) 
@@ -72,7 +72,7 @@ const handleForm = (e) =>{
                         </div>
                          <div className='form_email md:w-full'>
                            <div className='relative text-light_text_color dark:text-dark_text_color'>
-                                      <label htmlFor='email' className=' py-4  pointer-events-none'>Email *</label>
+                                      <label htmlFor='email' className=' py-4  pointer-events-none text-base'>Email *</label>
                                       <input type='email'  required name='email' id='email' minLength='5' maxLength='65'  placeholder='Email Address'
                                          pattern='\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$' title='Invalid Email format'
                                              value={email} onChange={e => setEmail(e.target.value.replace(/\s+/g, ' ')) }
