@@ -99,10 +99,10 @@ export default function Home({data}) {
                        I{`'`}m interested in working on ambitious projects with positive people and goal-oriented companies.
                    </p>
                    <p>
-                        I fully immersed myself in the software development world. Since May 2022, I{`'`}ve been building my technical, leadership,
+                        I fully immersed myself in the software development world and I{`'`}ve been building my technical, leadership,
                         and collaborative skills at
                         <Link href={'https://www.microverse.org/'} target='_blank' className='dark:text-dark_accent text-light_accent inline-block px-2 '>Microverse</Link>
-                        through collaboration and pair programming with other students from all over the world.
+                        through collaboration and pair programming with other developers.
                    </p>
                    <p>
                        My goal as a Software Developer is to continually improve my programming skills,
@@ -135,7 +135,7 @@ export default function Home({data}) {
                            '>
                <div className='flex flex-col gap-4 px-3 pt-8 xl:w-[50%]  '>
                    <Title text={'Contact Me'} />
-                  <p className='text-lg'> Your feedback is important to Me. </p>
+                  <p className='text-base'> Your feedback is important to Me. </p>
                   <p className='text-base'>If you have an application you are interested in developing, a feature that you need to build, or a project that needs coding. I’d love to help with it.</p>
                </div>
                <div className='form_wrapper  pt-5 px-3 xl:pt-10 xl:w-[50%] xl:pl-10 xl:pr-4   '>
