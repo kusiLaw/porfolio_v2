@@ -31,7 +31,7 @@ const Header = () => {
             bg-light_bg dark:bg-dark_bg 
     '>
        <div className='flex w-screen justify-between '>
-             <div className='flex justify-center items-center  text-xl md:text-2xl font-medium  '>
+             <div className='flex justify-center items-center  text-lg  font-medium  '>
                <Link href={'/'}>
                   <span className='text-light_accent  dark:text-dark_accent italic'>L</span>
                   <span className='text-light_accent dark:text-dark_accent'>a</span>
@@ -52,7 +52,7 @@ const Header = () => {
              {/* <Resume /> */}
             </div>
             
-            <div className='text-2xl -rotate-45 transition-all duration-300'>{
+            <div className='text-xl -rotate-45 transition-all duration-300'>{
              theme === 'light' ? 
                 <MdNightlight  onClick={() => setTheme('dark' )} />
                : 
