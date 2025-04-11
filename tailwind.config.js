@@ -27,7 +27,7 @@ module.exports = {
          'dark_text_header': '#b4c5cb',
          'dark_text_color' : '#8d9a9c',
          'dark_accent' : '#0081ac',
-         'dark_hover_shallow' : 'rgba(4, 15, 22, 0.3)',
+         'dark_hover_shallow' : 'rgba(4, 15, 22, 0.1)',
          'dark_hover_shallow_sm' : 'rgba(4, 15, 22, 0.1)'
        },
 
