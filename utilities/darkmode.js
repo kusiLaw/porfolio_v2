@@ -3,10 +3,10 @@ const Mode = () =>{
    if (typeof window !== 'undefined') {
       let store =  localStorage.getItem("mode")
 
-      if ( store === 'dark'){
+      if ( store === 'light'){
        return store
       }
-      return 'light'
+      return 'dark'
 
    }
      

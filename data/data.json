@@ -1,55 +1,58 @@
 {
 
     "projects" :[ 
-                   {
+                 
+     
+                  {
+                    "img" : "/websp.png",
+                    "text" : "Designed and developed the official corporate website for WebSP, a digital agency. This project focused on creating a high-performance, modern, and fully responsive digital showcase. A key achievement involved rigorous performance optimization and advanced SEO strategies (SSR, optimized image loading, dynamic imports) to achieve Lighthouse scores exceeding 95% on desktop and significantly boost mobile Core Web Vitals scores from 20% to over 80%",
+                    "title" : "WebSP Official Website (UK)",
+                    "tech_stack" : ["Next.js", "TailwindCSS", "REST API", "AWS"],
+                    "source" : "https://github.com/kusiLaw/",
+                    "live" : "https://www.websp.co.uk",
+                    "type" : "Web, Full-Stack",
+                    "year" : "Mar, 2025"
+                  },
+
+                  {
+                    "img" : "/mk-int-sda.png",
+                    "text" : "Developed a scalable web application for the Milton Keynes S.D.A International Church, designed to deliver personalized content and enhance member engagement. By leveraging Next.js for a dynamic frontend and Django for a robust backend, the platform seamlessly integrates powerful REST APIs for data interaction. This solution resulted in a significant 25% increase in engagement through targeted messaging and personalized recommendations for the church community..",
+                    "title" : "MK Int SDA Official Website (UK)",
+                    "tech_stack" : ["Next.js", "TailwindCSS","Django", "REST API"],
+                    "source" : "https://github.com/kusiLaw/church_frontend",
+                    "live" : "https://mkintsda.org/",
+                    "type" : "Web, Full-Stack",
+                    "year" : "Aug, 2024"
+                  },
+
+                  {
+                    "img" : "/lakyshop2.png",
+                    "text" : "A personal project exploring the development of a modern, responsive e-commerce platform. This site leverages Django for robust backend operations and Next.js with Tailwind CSS for a fast, component-driven frontend. While not yet fully functional, it showcases hands-on experience in building complex web applications, designing intuitive user interfaces, and integrating powerful frameworks.",
+                    "title" : "lakyshop e-commerce platform",
+                    "tech_stack" : ["Django", "Next.js", "TailwindCSS", "REST API"],
+                    "source" : "https://github.com/kusiLaw/e-commerce",
+                    "live" : "https://e-commerce-xi-ten-99.vercel.app",
+                    "type" : "Web, Full-Stack",
+                    "year" : "Aug, 2023"
+                  },
+
+                 
+                  {
                     "img" : "/dashboard.png",
-                    "text" : "Web app that gives users the ability to see relationships between different data sets, spot outliers, and track performance over time.",
-                    
+                    "text" : "Developed a modern and highly responsive dashboard application using Next.js. This project focuses on providing users with an intuitive interface for visualizing key data and managing information efficiently. It leverages Next.js's capabilities for fast loading times and a seamless user experience, making complex data accessible and actionable.",
                     "title" : "Next Dashboard",
                     "tech_stack" : ["NextJS", "React", "TailwindCSS", "Chart-2"],
                     "source" : "https://github.com/kusiLaw/next_dashboard",
                     "live" : "https://next-dashboard-rmsnon6kv-kusilaw.vercel.app/dashboard",
                     "type" : "Web, Front-End",
-                    "year" : "June, 2023"
-                  },
-     
-                  {
-                    "img" : "/laky_web2.png",
-                    "text" : "LakyPos-Web is a website built for LakyPos software which is a newer version of lakyPhonePOS. LakyPos software is a Point Of Sale app used to manage wholesale or retail shops.",
-                    "title" : "Laky-P.O.S",
-                    "tech_stack" : ["NextJS", "React", "CSS", "Ruby on Rials"],
-                    "source" : "https://github.com/kusiLaw/lakypos_web",
-                    "live" : "https://lakypos-web.vercel.app/",
-                    "type" : "Web, Full-Stack",
-                    "year" : "Mar, 2023"
-                  },
-    
-                  {
-                    "img" : "/web.png",
-                    "text" : "A simple course demo website that allows students to sign up for a course. It shows the details of the course including the lecturer, Course descriptions, and Course activities. Built with JavaScript.",
-                    "title" : "Free Web Course",
-                    "tech_stack" : ["JavaScript", "HTML", "CSS"],
-                    "source" : "https://github.com/kusiLaw/web-dev-course",
-                    "live" : "https://kusilaw.github.io/web-dev-course/",
-                    "type" : "Web, Front-End",
-                    "year" : "Aug, 2022"
-                  },
-                  {
-                     "img" : "/portfolio_v1.png",
-                     "text" : "This is my portfolio web project. It allows developers to present their personal projects. The project has different sections which include self-presentation, projects, about, and contact us form. Built using JavaScript.",
-                     "title" : "Portfolio V1",
-                     "tech_stack" : ["JavaScript", "HTML", "CSS"],
-                     "source" : "https://github.com/kusiLaw/portfolio",
-                     "live" : "https://kusilaw.github.io/portfolio/",
-                     "type" : "Web, Front-End",
-                     "year" : "July, 2022"
-                  }
+                    "year" : "June, 2022"
+                  }  
               ],
 
     "extra_projects" : [
                           {
                            "title" : "LakyPhone P.O.S",
-                           "text" : "This is a Point-Of-Sales desktop app built specifically for managing mobile phone retail shops. It is a robust, scalable, and powerful app with a modern design (Dracula theme). The newer version of this app(LakyPos) is general-purpose and can be used in almost all settings.  Built with Python, PySide, and CSS.",
+                           "text" : "Point-Of-Sales desktop app built specifically for managing mobile phone retail shops. It is a robust, scalable, and powerful app with a modern design (Dracula theme). The newer version of this app(LakyPos) is general-purpose and can be used in almost all settings.  Built with Python, PySide, and CSS.",
                            "main_tech" : "Python",
                            "tech_stacks" : ["Python", "PySide", "MySql", "Numpy", "Pandas"],
                            "source" : "https://github.com/kusiLaw/laky-phone-POS",
@@ -77,24 +80,34 @@
                         "live" : "",
                         "type" : "Web, Front-End",
                         "year" : "Sept, 2022"
-                      }
-
+                      },
+                      {
+                          "img" : "/web.png",
+                          "text" : "A simple course demo website that allows students to sign up for a course. It shows the details of the course including the lecturer, Course descriptions, and Course activities. Built with JavaScript.",
+                          "title" : "Free Web Course",
+                          "tech_stack" : ["JavaScript", "HTML", "CSS"],
+                          "source" : "https://github.com/kusiLaw/web-dev-course",
+                          "live" : "https://kusilaw.github.io/web-dev-course/",
+                          "type" : "Web, Front-End",
+                          "year" : "Aug, 2022"
+                        }
                     
                   ],
+
     "experience" : [
                  {
-                  "cat": "Front End",
-                  "exp": ["JavaScript (ES6+)", "React", "NextJS", "CSS", "TailwindCSS"]
+                  "cat": "Tech Stack",
+                  "exp": [ "React", "Next.js",  "Python", "TypeScript","Django","TailwindCSS","JavaScript (ES6+)"]
                  }
                  ,
                  {
-                  "cat": "Back End",
-                  "exp": ["Ruby on Rails", "Python","Django", "Rest API", "NodeJS", "Ruby" ]
+                  "cat": "AWS Cloud/DevOps",
+                  "exp": [ "ECS"," CloudFormation", "EC2", "S3", "RDS", "VPC"," IAM", "Lambda"," DynamoDB","Docker", "Kubernetes", "Terraform", "Jenkins"]
                  }
                  ,
                  {
-                  "cat": "Technologies",
-                  "exp": [ "Git", "GitHub", "Heroku", "Netlify", "Mobile/Responsive Development"," RSpec", "TDD", "Chrome Dev Tools" ]
+                  "cat": "Tools/Methods",
+                  "exp": [ "Git", "GitHub",  "Agile", "REST API", "CI/CD", "Mobile/Responsive Development", "TDD", "Chrome Dev Tools" ]
                  }
                  ,
                  {

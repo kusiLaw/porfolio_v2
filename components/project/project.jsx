@@ -4,20 +4,22 @@ import { AiFillGithub } from "react-icons/ai";
 import { MdOpenInNew } from "react-icons/md"
 import Link from "next/link";
 
+
 const Project = ({img,text, live, title, source,year, type, order = 1, tech_stack = []}) => {
   return (
     <div className='flex flex-col min-w-[320px] w-full '>
-        <div className={ order === 0 ? 'flex flex-col relative mdx:flex-row mdx:w-full' :
-                                       'flex flex-col relative mdx:flex-row-reverse mdx:w-full '}>
+        <div className={ order === 0 ? 'flex flex-col relative mdx:flex-row mdx: w-full' :
+                                       'flex flex-col relative mdx:flex-row-reverse mdx: w-full '}>
 
-           <div className= {`relative w-100 h-[15rem] mdx:h-[16rem] lg:h-[19rem] overflow-hidden  drop-shadow-lg mdx:drop-shadow-2xl mdx:w-3/6 mdx:hover:scale-105
-               mdx:hover:shadow-xl ease-in-out duration-500 	`} >
+           <div className= {`relative w-100 h-[15rem] mdx:h-[20rem] lg:h-[22rem] overflow-hidden  drop-shadow-lg mdx:drop-shadow-2xl mdx:w-3/6 mdx:hover:scale-105
+               mdx:hover:shadow-xl  ease-in-out duration-700 	`} >
                 <Link href={live}  target="_blank">
 
                  <Image src={img}
                  alt={title}
                  placeholder="blur"
                  blurDataURL={img}
+                 priority
                  fill
                  style={{ objectFit: "100%"}}
                   />
@@ -38,10 +40,10 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                               h-fit shadow-md -mt-24 mdx:mt-0 z-30
 
                              mdx:flex-col mdx:justify-between	  mdx:relative mdx:top-0 mdx:h-80 mdx:w-3/6
-                             mdx:bg-transparent mdx:dark:bg-transparent mdx:shadow-none
+                             mdx:bg-transparent mdx:dark:bg-transparent mdx:shadow-none px-2 mdx:px-0
 
                              '>
-                <div className={ order === 0 ? "p-2 mdx:flex mdx:justify-end ": "p-2  mdx:flex mdx:justify-start "}>
+                <div className={ order === 0 ? "p-2 mdx:flex mdx:justify-end mt-16 mdx:mt-0": "p-2  mdx:flex mdx:justify-start mt-16 mdx:mt-0"}>
                     <SubTile text={title }/>
                 </div>
 
@@ -50,9 +52,9 @@ const Project = ({img,text, live, title, source,year, type, order = 1, tech_stac
                    {type} {" - "}  {year}
                 </div>
                 <div className={ order === 0 ? "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap   hover:border-light_accent hover:dark:border-dark_accent duration-500 \
-                mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-ml-28 mdx:shadow-sm  mdx:z-10 mdx:m-1  mdx:rounded-md text-base " :
+                mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-ml-28 mdx:shadow-sm  mdx:z-10 mdx:m-1  mdx:rounded-md text-base dark:text-gray-300  justify-center items-center" :
                 "p-2 mdx:p-4 mdx:dark:bg-dark_bg_secondary flex-col flex-wrap   hover:border-light_accent hover:dark:border-dark_accent transition-all duration-500\
-                 mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-mr-28 mdx:shadow-sm  mdx:z-10 mdx:m-1 mdx:rounded-md text-base "
+                 mdx:border mdx:border-3 mdx:border-light_text_header mdx:bg-light_accent_divider  mdx:-mr-28 mdx:shadow-sm  mdx:z-10 mdx:m-1 mdx:rounded-md text-base dark:text-gray-300  justify-center items-center"
                 }>
                    {text}
                 </div>
